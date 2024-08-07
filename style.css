@@ -182,6 +182,10 @@ footer #contact {
   color: #080c0e;
 }
 
+footer #contact a {
+  cursor: alias;
+}
+
 footer #language {
   text-align: right;
   /* cursor: pointer; */
