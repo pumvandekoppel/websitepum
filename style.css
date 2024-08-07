@@ -198,7 +198,7 @@ footer #language {
 
 @media screen and (max-width: 800px) {
   .index h1 {
-    font-size: 4.6vmax;
+    font-size: 4vmax;
   }
 
   .hide-on-desktop {
