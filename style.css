@@ -472,6 +472,10 @@ section#artist-statement-and-cv {
     font-size: 0.85em !important;
   }
 
+  section > h3 {
+    font-size: 1em !important;
+  }
+
   main {
     width: 94vw;
     transform-origin: right;
