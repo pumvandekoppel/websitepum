@@ -4,10 +4,6 @@ html {
   max-height: 100%;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 body {
   color: #080c0e;
   background-color: #fefefe;
