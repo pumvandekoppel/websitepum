@@ -5,106 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pum van de Koppel</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
   </head>
-  <body>
+  <body id="index">
     <header class="index">
-      <h1>
-        Pum van de Koppel is painting, making websites, drawing, glueing, politicizing, categorizing, cycling, mixing, attempting, looking out of the window, structuring, longing, cuddling, fumbling, writing, drumming, lecturing, dancing, eating, untangling.
-
-        <!-- <a href="about.html" id="name">Pum van de Koppel</a> is
-        <span class="nederlands">aan het</span>
-        <div id="verbs">
-          <a href="painting.html"
-            ><span class="english">painting</span
-            ><span class="nederlands">schilderen</span>
-            </a
-          >,
-          <a href=""
-            ><span class="english">making websites</span
-            ><span class="nederlands">websiten</span></a
-          >,
-          <a href="drawing.html"
-            ><span class="english">drawing</span
-            ><span class="nederlands">tekenen</span></a
-          >,
-          <a href="lijmen.html"
-            ><span class="english">glueing</span
-            ><span class="nederlands">lijmen</span></a
-          >,
-          <a href="politiseren.html"
-            ><span class="english">politicizing</span
-            ><span class="nederlands">politiseren</span></a
-          >,
-          <a href="categoriseren.html"
-            ><span class="english">categorizing</span
-            ><span class="nederlands">categoriseren</span></a
-          >,
-          <a href="fietsen.html"
-            ><span class="english">cycling</span
-            ><span class="nederlands">fietsen</span></a
-          >,
-          <a href="mixen.html"
-            ><span class="english">mixing</span
-            ><span class="nederlands">mixen</span></a
-          >,
-          <a href="proberen.html"
-            ><span class="english">attempting</span
-            ><span class="nederlands">proberen</span></a
-          >,
-          <a href="uithetraamkijken.html"
-            ><span class="english">looking out of the window</span
-            ><span class="nederlands">kijken uit het raam</span></a
-          >,
-          <a href="structureren"
-            ><span class="english">structuring</span
-            ><span class="nederlands">structureren</span></a
-          >,
-          <a href="begeren.html"
-            ><span class="english">longing</span
-            ><span class="nederlands">begeren</span></a
-          >,
-          <a href="knuffelen.html"
-            ><span class="english">cuddling</span
-            ><span class="nederlands">knuffelen</span></a
-          >,
-          <a href="knoeien.html"
-            ><span class="english">fumbling</span
-            ><span class="nederlands">knoeien</span></a
-          >,
-          <a href="schrijven.html"
-            ><span class="english">writing</span
-            ><span class="nederlands">schrijven</span></a
-          >,
-          <a href="drummen.html"
-            ><span class="english">drumming</span
-            ><span class="nederlands">drummen</span></a
-          >,
-          <a href="lezingenaanhetgeven.html"
-            ><span class="english">lecturing</span
-            ><span class="nederlands">lezingen aan het geven</span></a
-          >,
-          <a href="dansen.html"
-            ><span class="english">dancing</span
-            ><span class="nederlands">dansen</span></a
-          >,
-          <a href="eten.html"
-            ><span class="english">eating</span
-            ><span class="nederlands">eten</span></a
-          >,
-          <a href="ontknopen.html"
-            ><span class="english">untangling</span
-            ><span class="nederlands">ontknopen</span></a
-          >. -->
-        </div>
-      </h1>
+      <nav>
+        <h1>
+          <span class="name">Pum van de Koppel</span>
+          <a href="about.html" id="about-button">is</a>
+          <span class="nl">aan het</span>
+          <div id="verbs">
+            <a href="painting.html"
+              ><span class="en">painting,</span
+              ><span class="nl">schilderen,</span></a
+            >
+            <a href="makingwebsites.html"
+              ><span class="en">making websites,</span
+              ><span class="nl">websiten,</span></a
+            >
+            <a href="drawing.html"
+              ><span class="en">drawing,</span><span class="nl">tekenen,</span></a
+            >
+            <a class="inactive-verb" href="lijmen.html"
+              ><span class="en">glueing,</span><span class="nl">lijmen,</span></a
+            >
+            <a class="inactive-verb" href="politiseren.html"
+              ><span class="en">politicizing,</span
+              ><span class="nl">politiseren,</span></a
+            >
+            <a class="inactive-verb" href="categoriseren.html"
+              ><span class="en">categorizing,</span
+              ><span class="nl">categoriseren,</span></a
+            >
+            <a class="inactive-verb" href="fietsen.html"
+              ><span class="en">cycling,</span><span class="nl">fietsen,</span></a
+            >
+            <a class="inactive-verb" href="mixen.html"
+              ><span class="en">mixing,</span><span class="nl">mixen,</span></a
+            >
+            <a class="inactive-verb" href="proberen.html"
+              ><span class="en">attempting,</span
+              ><span class="nl">proberen,</span></a
+            >
+            <a class="inactive-verb" href="uithetraamkijken.html"
+              ><span class="en">looking out of the window,</span
+              ><span class="nl">kijken uit het raam,</span></a
+            >
+            <a class="inactive-verb" href="structureren.html"
+              ><span class="en">structuring,</span
+              ><span class="nl">structureren,</span></a
+            >
+            <a class="inactive-verb" href="begeren.html"
+              ><span class="en">longing,</span><span class="nl">begeren,</span></a
+            >
+            <a class="inactive-verb" href="knuffelen.html"
+              ><span class="en">cuddling,</span
+              ><span class="nl">knuffelen,</span></a
+            >
+            <a class="inactive-verb" href="knoeien.html"
+              ><span class="en">fumbling,</span><span class="nl">knoeien,</span></a
+            >
+            <a class="inactive-verb" href="schrijven.html"
+              ><span class="en">writing,</span><span class="nl">schrijven,</span></a
+            >
+            <a class="inactive-verb" href="drummen.html"
+              ><span class="en">drumming,</span><span class="nl">drummen,</span></a
+            >
+            <a class="inactive-verb" href="lezingenaanhetgeven.html"
+              ><span class="en">lecturing,</span
+              ><span class="nl">lezingen aan het geven,</span></a
+            >
+            <a class="inactive-verb" href="dansen.html"
+              ><span class="en">dancing,</span><span class="nl">dansen,</span></a
+            >
+            <a class="inactive-verb" href="eten.html"
+              ><span class="en">eating,</span><span class="nl">eten,</span></a
+            >
+            <a class="inactive-verb" href="ontknopen.html"
+              ><span class="en">untangling</span
+              ><span class="nl">ontknopen</span></a
+            ><span onclick="puntjePuntjePuntje()" id="puntje-puntje-puntje"
+              ><span id="puntje">.</span><span id="puntje-puntje">..</span></span
+            >
+          </div>
+        </h1>
+      </nav>
     </header>
     <footer>
-      <div id="contact"><p><a href="mailto:pumvandekoppel@gmail.com"><span class="hide-on-mobile">pumvandekoppel@gmail.com</span><span class="hide-on-desktop">contact</span></a></p></div>
-      <div id="language">
-        <p>website in progress</p>
+        <div id="contact">
+          <p>
+            <span class="name">Pum van de Koppel</span> is 
+            <span class="nl">een nieuwsbrief aan het </span>
+            <a class="external-link" href="mailto:pumvandekoppel@gmail.com?subject=Newsletter Sign-Up Form&body=Hereby I would like to sign up for your newsletter. Best Regards,"
+              ><span class="en">&ensp;sending out&ensp;</span
+              ></a
+            ><span class="en">a newsletter</span>
+            <a href="mailto:pumvandekoppel@gmail.com?subject=Nieuwsbrief Aanmeldformulier&body=Hierbij meld ik me graag aan voor de nieuwsbrief. Groeten," class="external-link"><span class="nl">&ensp;bijhouden&ensp;</span></a>
+            via e&#8209;mail.
+          </p>
+        </div>
+        <div id="language">
+          <p>
+            <span id="en" onclick="en()">en</span> <span class="en">]</span
+            ><span class="nl">[</span> <span id="nl" onclick="nl()">nl</span>
+          </p>
+        </div>
       </div>
     </footer>
+    <script src="puntjepuntjepuntje.js"></script>
   </body>
   <script src="lang.js"></script>
+  <script src="scheef.js"></script>
   <!-- <script src="shuffle.js"></script> -->
 </html>

@@ -1,17 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pum van de Koppel</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
+  </head>
+  <body id="about">
+    <aside           onclick="unfocus()">
+      <header>
+        <h2>
+          <a href="index.html"
+            ><span class="name" id="back-button">Pum van de Koppel</span></a
+          >
+          is <span class="en">interested in verbs</span
+          ><span class="nl">geïnteresseerd in werkwoorden</span>.
+        </h2>
+      </header>
+      <section id="artist-statement-and-cv">
+        <div>
+          <p id="artist-statement" class="en">
+            <span class="name">Pum van de Koppel</span> is not very brave, and
+            is for example often unable to cross on a red light even though he
+            would want to. Occupied by rules, his art practice serves to
+            negotiate this paralysis. <br />
+            His artistic practice is used as a tool to investigate our social
+            codes from an autistic perspective. From this perspective mundane
+            objects and mannerisms turn into something theatrical. The stage,
+            which the artistic context provides, in turn then becomes a site to
+            play and perform his way around the (unwritten) rules of societal
+            expectations and the art world. <br /><br />
+            <!-- Currently he is interested in the image of professionality. He uses
+            performance in combination with drawing to give form to the longing
+            for being a 'normal' member of society - normal in the Dutch meaning
+            of the word; productive, efficient, neurotypical; With enough room
+            for his imagination to then for example sit behind a desk as an
+            office worker at the Ministry of Finance, to work as a manager at
+            the academy, or to give a lecture as a successful student. In the
+            end he is unsuccesfully taking on these roles while prioritizing the
+            attempt over a desired result. <br /><br /> -->
+            This romantic process of imagining - embodying - failing reveals two
+            core aspects of his practice: honesty and its absurd humor.
+            <br />
+            <!-- With his privilege of being
+            permitted to attempt and fail he has the ambition to unlock a
+            potential in the viewer to challenge their inherited normality, by
+            demonstrating an antagonistic and vulnerable proposition that
+            champions a clumsy aesthetic. -->
+          </p>
+          <p id="artist-statement" class="nl">
+            <span class="name">Pum van de Koppel</span> is niet zo heldhaftig,
+            en steekt bijvoorbeeld vaak niet over bij een rood stoplicht, ook al
+            zou hij dat wel willen. In beslag genomen door regels, gebruikt hij
+            het kunstenaarschap om deze verlamming te beslechten. Hij gebruikt
+            het als hulpmiddel om onze sociale codes te onderzoeken vanuit een
+            autistisch perspectief. Vanuit dit perspectief worden alledaagse
+            objecten en maniertjes theatraal. Het artistieke podium wordt zo een
+            plek om spelenderwijs een pad rondom de maatschappelijke
+            verwachtingen en de (ongeschreven) regels van de kunstwereld te
+            ontdekken.<br /><br />
+            Dit romantische proces van inbeelden - belichamen - falen onthult
+            twee kernaspecten van zijn werk: eerlijkheid en haar absurde gevoel
+            voor humor.
+          </p>
+        </div>
+        <!-- <strong><br />---<br /><br /></strong> -->
+        <div>
+          <p id="cv" class="en">
+            <span class="name">Pum van de Koppel</span> is a visual artist who
+            graduated in 2023 with a Bachelor's Fine Arts at the Royal Academy
+            of Arts (KABK) in The Hague, The Netherlands and in 2021 went on
+            exchange to the Site-specific Art Department at Die Angewandte in
+            Vienna, Austria. <br /><br />
+            He participated in group shows, performance nights and panel talks
+            in Amsterdam, The Hague, Groningen, Rotterdam, Middelburg and
+            Vienna.
+          </p>
+          <p id="cv" class="nl">
+            <span class="name">Pum van de Koppel</span> is kunstenaar en
+            studeerde in 2023 af met een Bachelor's Beeldende Kunsten op de
+            Koninklijke Academie van Beeldende Kunsten (KABK) in Den Haag en
+            ging in 2021 op uitwisseling naar de afdeling Site-specific Art op
+            Die Angewandte in Wenen, Oostenrijk. <br /><br />
+            Hij nam deel aan groepstentoonstellingen, performance-avonden en
+            paneldiscussies in Amsterdam, Den Haag, Groningen, Rotterdam,
+            Middelburg en Wenen.
+          </p>
+        </div>
+      </section>
+      <footer>
+        <div id="contact">
+          <p>
+            <span class="name"> Pum van de Koppel</span>
+            <span class="en">&ensp;is</span
+            ><span class="nl">&ensp;is aan het</span>
+            <a
+              class="external-link"
+              href="mailto:pumvandekoppel@gmail.com "
+              id="mail-button"
+              ><span class="en">&ensp;corresponding&ensp;</span
+              ><span class="nl">&ensp;corresponderen&ensp;</span></a
+            >
+            via e&#8209;mail.
+          </p>
+        </div>
+      </footer>
+    </aside>
 
-</head>
-<body>
-    <header>
-        <h1><a href="index.html"><span class="english">about</span><span class="nederlands">over</span></a></h1>
-    </header>
-    <footer><div id="contact"><p>pumvandekoppel@gmail.com</p></div><div id="language"><p>[<span class="en">en</span> | <span id="nl">nl</span>]</p></div></footer>
-</body>
+    <main id="professionality-portraits" class="no-select">
+      <figure>
+        <img
+          onclick="unfocus()"
+          src="assets/over/tiewrap-overhemd.png"
+          alt=""
+        />
+        <figcaption>
+          <p class="en">
+            tiewrap shirt for <em>An attempt to live in</em> [2023]
+          </p>
+          <p class="nl">
+            tiewrap overhemd voor <em>Een poging om in te wonen</em> [2023]
+          </p>
+        </figcaption>
+      </figure>
+    </main>
+
+    <!-- <section id="bottom-buffer"></section> -->
+    <!-- <div id="push"></div> -->
+
+    <script src="scheef.js"></script>
+    <script src="lang.js"></script>
+    <script src="focus.js"></script>
+  </body>
 </html>

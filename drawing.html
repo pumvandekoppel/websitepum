@@ -5,46 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pum van de Koppel</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
   </head>
-  <body>
-    <header>
-      <div id="verb">
-        <h1>
-          <a href="index.html">
-            <span class="english">drawing</span>
-            <span class="nederlands">tekenen</span>
-          </a>
-          &ensp;&ensp;&ensp;
-          <span id="title">puddle of rainwater</span>
-        </h1>
-      </div>
-      <div id="info-button">
-        <h1>
-          <a href="index.html"><small>&#8505;</small></a>
-        </h1>
-      </div>
-    </header>
+  <body id="drawing">
+    <aside class="info" onlick="unfocus()">
+      <header>
+        <h2>
+          <a href="index.html"
+            ><span class="name" class="back-button">Pum van de Koppel</span></a
+          >
+          <a href="about.html" id="about-button"> is </a
+          ><span class="en">drawing</span
+          ><span class="nl">aan het tekenen</span>.
+        </h2>
+      </header>
+      <section id="schilderijen-voor-een-on-zinnige-monarchie">
+        <h3 class="en">Five from the archive: 'self' [2019-2024]</h3>
+        <h3 class="nl">Vijf uit het archief: 'zelf' [2019-2024]</h3>
+        <p class="en">
+          Drawing remains at the heart of
+          <span class="name">Pum van de Koppel</span>'s artistic practice
+          throughout the years and has provided him an important outlet in times
+          of turmoil. <br />
+          To free the accumulated drawings from their weighty storage space
+          <span class="name">Pum van de Koppel</span> is starting a new series
+          called <em>Five from the archive</em> where he picks five drawings
+          which surround a common theme to reproduce in print. <br /><br />
+          The theme that emerged for the first edition is 'self'. <br />
+          The drawings are printed on 300 gram paper in an edition of twenty-five and come in a
+          set of five which costs €25. The prints are signed and numbered.<br />
+          Send out an e-mail if you're interested!
+        </p>
+        <p class="nl">
+          Tekenen staat door de jaren heen aan de basis van het kunstenaarschap van
+          <span class="name">Pum van de Koppel</span> en bood hem een belangrijke uitlaatklep in rumoerige periodes. <br>Om de opgehoopte tekeneningen van hun gewichtige opslagruimte te bevrijden start <span class="name">Pum van de Koppel</span> een nieuwe serie genaamd <em>Five from the archive</em> waar hij steeds vijf tekeningen rondom een gemeenschappelijk thema uitkiest om te reproduceren in print. <br><br>
+          Het eerste thema dat naar voren kwam was 'zelf'. <br>
+          De tekeningen zijn gedrukt op papier van 300 gram in een editie van vijfentwintig en gaan in een set van vijf voor €25. De prints worden gesigneerd en genummerd. <br>
+          Stuur een e-mail voor koop!
+        </p>
+      </section>
+      <footer>
+        <div id="contact">
+          <p>
+            <span class="name">
+              Pum van de Koppel</span>
+            <span class="en">&ensp;is</span><span class="nl">&ensp;is aan het</span>
+            <a class="external-link" href="mailto:pumvandekoppel@gmail.com " id="mail-button"
+              ><span class="en">&ensp;corresponding&ensp;</span
+              ><span class="nl">&ensp;corresponderen&ensp;</span></a
+            >
+            via e&#8209;mail.
+          </p>
+        </div>
+      </footer>
+    </aside>
+
     <main>
-        <section id="regenplas">
-            <div class="bumper"></div>
-            <figure>
-                <img src="assets/tekenen/regenplas.jpg" alt="">
-                <figcaption>marker on paper, ...x...cm [2024]</figcaption>
-            </figure>
-            <div class="bumper"></div>
-        </section>
-        <section id="self">
-            <div class="bumper"></div>
-            <figure><img src="assets/tekenen/self1-min.jpg" alt=""><figcaption></figcaption></figure>
-            <div class="bumper"></div>
-        </section>
-        <aside><h3>* <br>|</h3></aside>
+      <figure>
+        <img onclick="unfocus()" src="assets/tekenen/self-1.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Self 1</em> - A6, print</p>
+          <p class="nl"><em>Zelf 1</em> - A6 , print</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img onclick="unfocus()" src="assets/tekenen/self-2.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Self 2</em> - A6, print</p>
+          <p class="nl"><em>Zelf 2</em> - A6 , print</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img onclick="unfocus()" src="assets/tekenen/self-3.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Self 3</em> - A6, print</p>
+          <p class="nl"><em>Zelf 3</em> - A6 , print</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img onclick="unfocus()" src="assets/tekenen/self-4.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Self 4</em> - A6, print</p>
+          <p class="nl"><em>Zelf 4</em> - A6 , print</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img onclick="unfocus()" src="assets/tekenen/self-5.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Self 5</em> - A6, print</p>
+          <p class="nl"><em>Zelf 5</em> - A6 , print</p>
+        </figcaption>
+      </figure>
+      <!-- <figure>
+        <img src="assets/tekenen/self-1.jpg" alt="" />
+        <figcaption>
+          <p class="en">
+            <em>Self 1</em> - A6, print (edition of twenty-five) 
+          </p>
+          <p class="nl">
+            <em>Zelf 1</em> - A6 , print (editie van vijfentwintig)
+          </p>
+        </figcaption>
+      </figure> -->
     </main>
-    <footer>
-      <div id="contact"><p>pumvandekoppel@gmail.com</p></div>
-      <div id="language">
-        <p><span class="en">en</span> | <span id="nl">nl</span></p>
-      </div>
-    </footer>
+
+    <script src="scheef.js"></script>
+    <script src="lang.js"></script>
+    <script src="focus.js"></script>
   </body>
 </html>
