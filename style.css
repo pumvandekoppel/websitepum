@@ -322,12 +322,13 @@ figure img {
 figure figcaption {
   padding: 0;
   vertical-align: middle;
-  flex-basis: 10dvh;
+  flex-basis: auto;
   z-index: 1;
   align-self: center;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3.7dvh;
 }
 
 figure figcaption > p {
@@ -491,17 +492,20 @@ section#artist-statement-and-cv {
   }
 
   figcaption {
-    margin-left: 0vw !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
+  }
+
+  figcaption > * {
+    vertical-align: bottom;
+
   }
 
   footer {
     width: 94vw;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
 
-  footer, figure figcaption {
-    margin-bottom: 1.6dvh;
+    height: 10dvh;
   }
 
   footer div#contact {
