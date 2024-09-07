@@ -1,7 +1,11 @@
 /********************* general stuff */
 
 html {
-  max-height: 100dvh;
+  max-height: 100%;
+}
+
+* {
+  outline: 1px solid red;
 }
 
 body {
@@ -328,7 +332,8 @@ figure figcaption {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3.7dvh;
+  padding-bottom: 3.7dvh;
+  margin-bottom: 0 !important;
 }
 
 figure figcaption > p {
@@ -454,6 +459,12 @@ section#artist-statement-and-cv {
   aside {
     left: -94vw;
     position: fixed;
+    overflow-y: scroll;
+    margin-bottom: 11dvh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+
 
   }
 
@@ -468,6 +479,11 @@ section#artist-statement-and-cv {
 
   header h2 {
     font-size: 24px;
+    margin-top: auto;
+  }
+
+  section {
+    height: auto !important;
   }
 
   section > * {
@@ -494,7 +510,8 @@ section#artist-statement-and-cv {
   figcaption {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 6px;
+    margin-bottom: 0 !important;
+    padding-bottom: 12px !important;
   }
 
   figcaption > * {
@@ -506,11 +523,16 @@ section#artist-statement-and-cv {
     width: 94vw;
 
     height: 10dvh;
+    position: initial;
+    margin-top: auto;
   }
 
   footer div#contact {
     width: 63vw !important;
     margin-top: 1.5dvh !important;
+    flex-shrink: 0;
+    padding-bottom: 0 !important;
+    height: auto;
   }
 
   footer div#language {
