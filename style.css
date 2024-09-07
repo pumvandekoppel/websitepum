@@ -176,6 +176,11 @@ header h2 {
   font-weight: 900;
 }
 
+header h2.name {
+  font-variation-settings:
+    "SOFT" 100;
+}
+
 header #title {
   font-style: italic;
 }
