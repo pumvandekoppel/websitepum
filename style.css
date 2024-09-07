@@ -233,6 +233,7 @@ footer {
   margin: 0;
   padding: 0;
   z-index: 3;
+  background-color: #fefefe;
 }
 
 footer > * {
@@ -490,7 +491,13 @@ section#artist-statement-and-cv {
   }
 
   figcaption {
-    margin-left: 3vw !important;
+    margin-left: 0vw !important;
+  }
+
+  footer {
+    width: 94vw;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   footer, figure figcaption {
