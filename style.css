@@ -127,10 +127,6 @@ body#index {
   height: 100dvh;
 }
 
-#index footer {
-  padding-bottom: 12px;
-}
-
 /******************************** aside */
 
 aside {
@@ -148,7 +144,7 @@ aside {
   max-width: 74ch;
   min-width: 20ch;
 
-  transition: left .88s ease-in-out;
+  transition: left 0.88s ease-in-out;
   transform-origin: left;
 }
 
@@ -186,10 +182,9 @@ header h2 {
 }
 
 header h2 span.name {
-  font-variation-settings:
-    "SOFT" 100;
-    color: #8c9193;
-    opacity: 69%;
+  font-variation-settings: "SOFT" 100;
+  color: #8c9193;
+  opacity: 69%;
 }
 
 header #title {
@@ -469,8 +464,6 @@ section#artist-statement-and-cv {
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
-
-
   }
 
   section#artist-statement-and-cv {
@@ -479,7 +472,6 @@ section#artist-statement-and-cv {
 
   header {
     margin-bottom: 3.8dvh;
-
   }
 
   header h2 {
@@ -521,7 +513,6 @@ section#artist-statement-and-cv {
 
   figcaption > * {
     vertical-align: bottom;
-
   }
 
   footer {
@@ -549,8 +540,6 @@ section#artist-statement-and-cv {
   }
 
   #index footer {
-    margin-top: auto;
+    padding-bottom: 9px;
   }
-
-
 }
