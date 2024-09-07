@@ -1,7 +1,7 @@
 /********************* general stuff */
 
 html {
-  max-height: 100%;
+  max-height: 100dvh;
 }
 
 body {
@@ -119,6 +119,18 @@ div.images {
   margin-right: auto;
 }
 
+/******************* index *****/
+
+body#index {
+  display: flex !important;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+#index footer {
+  padding-bottom: 12px;
+}
+
 /******************************** aside */
 
 aside {
@@ -145,6 +157,7 @@ aside {
 #index header {
   width: 94vw;
   margin-top: 0;
+  height: auto;
 }
 
 header {
@@ -160,10 +173,6 @@ header {
   justify-content: start;
   align-items: start;
   z-index: 3;
-}
-
-header nav {
-  height: 10dvh;
 }
 
 header h2 {
@@ -534,4 +543,14 @@ section#artist-statement-and-cv {
   footer div#language {
     margin-top: 6.5dvh;
   }
+
+  #index > * {
+    overflow-y: hidden;
+  }
+
+  #index footer {
+    margin-top: auto;
+  }
+
+
 }
