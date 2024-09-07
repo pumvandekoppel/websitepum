@@ -521,6 +521,7 @@ section#artist-statement-and-cv {
     height: 10dvh;
     position: initial;
     margin-top: auto;
+    padding-bottom: 9px;
   }
 
   footer div#contact {
@@ -542,4 +543,5 @@ section#artist-statement-and-cv {
   #index footer {
     padding-bottom: 9px;
   }
+
 }
