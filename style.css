@@ -185,6 +185,7 @@ header h2 span.name {
   font-variation-settings: "SOFT" 100;
   color: #8c9193;
   opacity: 69%;
+  transition: transform .77s ease-in-out;
 }
 
 header #title {
@@ -471,7 +472,7 @@ section#artist-statement-and-cv {
   }
 
   header {
-    margin-bottom: 3.8dvh;
+    margin-bottom: 1.6dvh;
   }
 
   header h2 {
@@ -479,15 +480,19 @@ section#artist-statement-and-cv {
     margin-top: 3.2dvh;
   }
 
+  header h2 span.name {
+    transition-delay: 0.44s;
+  }
+
   section {
     height: auto !important;
   }
 
-  section > * {
-    font-size: 0.85em !important;
+  section > h3 {
+    font-size: 1.3em !important;
   }
 
-  section > h3 {
+  section > * {
     font-size: 1em !important;
   }
 

@@ -7,6 +7,7 @@ const main = document.getElementsByTagName("main")[0]
 function unfocus() {
     if (focused == true) {
         aside.style.left = "3vw"
+        scheef()
         focused = false
         }
     else {
