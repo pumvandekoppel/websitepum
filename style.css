@@ -217,6 +217,11 @@ header a#about-button {
   cursor: help;
 }
 
+header a#about-button:hover {
+  opacity: 99% !important;
+  transition: opacity 0.2s;
+}
+
 /***************************************** section */
 
 section {
@@ -291,7 +296,12 @@ a.external-link {
   color: #8c9193;
   opacity: 60%;
   cursor: alias;
+  transition: opacity 0.2s;
   /* color: rgb(0, 0, 238); */
+}
+
+a.external-link:hover {
+  opacity: 99%;
 }
 
 main a.external-link {
