@@ -458,11 +458,11 @@ header a span#name {
 
 /*************************************** about */
 
-section#artist-statement-and-cv {
+/* section#artist-statement-and-cv {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 /******************************************************** responsive */
 
