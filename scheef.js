@@ -6,7 +6,7 @@ function randomRotation(min, max) { // min and max included
 
 function scheef() {
     for (let myName of theArtists) {
-        const randomDegree = randomRotation(-1.26, 1.25)
+        const randomDegree = randomRotation(-1.29, 1.28)
         myName.style.transform = "rotate(" + randomDegree + "deg)";
     }
 }
