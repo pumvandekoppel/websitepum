@@ -201,9 +201,13 @@ header h2 {
 
 header h2 span.name {
   font-variation-settings: "SOFT" 100;
-  color: #8c9193;
-  opacity: 69%;
-  transition: transform 0.77s ease-in-out;
+  color: #6b6d6e;
+  opacity: 53%;
+  transition: transform 0.77s ease-in-out, opacity 0.2s;
+}
+
+header h2 span.name:hover {
+  opacity: 100%;
 }
 
 header #title {
