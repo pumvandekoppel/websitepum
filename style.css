@@ -61,6 +61,10 @@ h1 {
   line-height: 1.374;
 }
 
+h1 a:hover {
+  opacity: 60% !important;
+}
+
 p {
   font-size: 1em;
 }
@@ -71,7 +75,7 @@ a {
 }
 
 a:hover {
-  opacity: 99% !important;
+  opacity: 99%;
 }
 
 .back-button:hover {
@@ -81,8 +85,7 @@ a:hover {
 
 a#about-button {
   color: #080c0e;
-  opacity: 60%;
-  margin-top: -1em;
+  opacity: 60% !important;
 }
 
 span.name {
@@ -368,9 +371,6 @@ figure figcaption {
   margin-right: auto;
   padding-bottom: 3.7dvh;
   margin-bottom: 0 !important;
-}
-
-figure figcaption {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -380,7 +380,7 @@ figure figcaption span.credits {
   text-align: right;
 }
 
-figure figcaption > p {
+figure figcaption > p, figure figcaption > small {
   margin: 0;
   z-index: 1;
   margin-top: auto;
@@ -559,6 +559,7 @@ section#artist-statement-and-cv {
     margin-right: auto;
     margin-bottom: 0 !important;
     /* padding-bottom: 12px !important; */
+    flex-wrap: wrap;
   }
 
   figcaption > * {

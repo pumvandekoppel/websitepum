@@ -10,8 +10,8 @@
    xmp:Rating="1"
    xmpMM:DerivedFrom="DSC00279.jpg"
    darktable:import_timestamp="63861419569965841"
-   darktable:change_timestamp="63861424995210660"
-   darktable:export_timestamp="63861420823715320"
+   darktable:change_timestamp="63861425007910057"
+   darktable:export_timestamp="63861425063833421"
    darktable:print_timestamp="-1"
    darktable:xmp_version="5"
    darktable:raw_params="0"
@@ -19,7 +19,7 @@
    darktable:history_end="38"
    darktable:iop_order_version="3"
    darktable:history_basic_hash="276b905b5a3ded4dea46110c7116222b"
-   darktable:history_current_hash="12efc7f6724b82ed930433d9214c0671">
+   darktable:history_current_hash="06ad2cc3b7eaa2106af5938db9b07c41">
    <darktable:masks_history>
     <rdf:Seq/>
    </darktable:masks_history>
@@ -437,7 +437,7 @@
       darktable:operation="exposure"
       darktable:enabled="1"
       darktable:modversion="6"
-      darktable:params="00000000cd44583cae47913f00004842000080c000000000"
+      darktable:params="00000000cd44583ce626c13f00004842000080c000000000"
       darktable:multi_name=""
       darktable:multi_name_hand_edited="0"
       darktable:multi_priority="0"
