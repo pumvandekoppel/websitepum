@@ -132,7 +132,6 @@ div.images {
   -ms-overflow-style: none !important; /* IE and Edge */
 
   scrollbar-width: none !important; /* Firefox */
-
 }
 
 /******************* index *****/
@@ -187,7 +186,6 @@ header {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: max(1.6dvh, 34px);
-
 }
 
 header h2 {
@@ -204,7 +202,7 @@ header h2 span.name {
   font-variation-settings: "SOFT" 100;
   color: #8c9193;
   opacity: 69%;
-  transition: transform .77s ease-in-out;
+  transition: transform 0.77s ease-in-out;
 }
 
 header #title {
@@ -223,6 +221,7 @@ header a#about-button {
 
 section {
   height: calc(100dvh - 20dvh);
+  max-width: 55ch;
   display: flex;
   flex-direction: column;
 }
@@ -380,7 +379,8 @@ figure figcaption span.credits {
   text-align: right;
 }
 
-figure figcaption > p, figure figcaption > small {
+figure figcaption > p,
+figure figcaption > small {
   margin: 0;
   z-index: 1;
   margin-top: auto;
@@ -463,6 +463,18 @@ header a span#name {
   flex-direction: column;
   justify-content: space-between;
 } */
+
+div#dot-dot-dot {
+  display: flex;
+  justify-content:space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  gap: max(1.6dvh, 34px);
+}
+
+div #dot-dot-dot hr {
+  width: 1px !important;
+}
 
 /******************************************************** responsive */
 
@@ -590,5 +602,4 @@ header a span#name {
   footer div#language {
     height: auto;
   }
-
 }
