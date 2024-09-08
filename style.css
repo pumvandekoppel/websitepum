@@ -1,7 +1,10 @@
 /********************* general stuff */
 
 html {
-  max-height: 100dvh;
+  height: 100dvh;
+  overflow: hidden !important;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,8 +18,8 @@ body {
   width: 94vw;
   height: 100dvh;
   margin: 0;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-bottom: 0;
+  margin-top: 0;
   transform-origin: left;
   background-color: #fefefe;
   font-family: "Fraunces", serif;
@@ -124,8 +127,7 @@ div.images {
   -ms-overflow-style: none !important; /* IE and Edge */
 
   scrollbar-width: none !important; /* Firefox */
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 /******************* index *****/
@@ -159,6 +161,7 @@ aside {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
+  margin-bottom: 0 !important;
 }
 
 /****************************** header */
@@ -475,13 +478,13 @@ section#artist-statement-and-cv {
 
   body {
     display: block;
-    width: 100vw;
+    width: 94vw;
     margin-left: 3vw;
     margin-right: 3vw;
   }
 
   aside {
-    width: 94vw;
+    width: calc(94vw + 2px);
     left: -95vw;
     position: fixed;
     overflow-y: scroll;
