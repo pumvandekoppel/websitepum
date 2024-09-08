@@ -146,6 +146,9 @@ aside {
 
   transition: left 0.88s ease-in-out;
   transform-origin: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 /****************************** header */
@@ -154,6 +157,7 @@ aside {
   width: 94vw;
   margin-top: 0;
   height: auto;
+  margin-bottom: 0;
 }
 
 header {
@@ -164,11 +168,6 @@ header {
   margin: 0;
   margin-left: 0;
   margin-right: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: start;
-  z-index: 3;
 }
 
 header h2 {
@@ -228,6 +227,7 @@ div#push {
   width: 94vw;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 footer {
@@ -239,7 +239,7 @@ footer {
   padding: 0;
   z-index: 3;
   background-color: #fefefe;
-  margin-bottom: 3.1dvh;
+  /* margin-bottom: 3.1dvh; */
 }
 
 footer > * {
@@ -249,6 +249,10 @@ footer > * {
 footer p {
   margin: 0;
   font-size: 1.1em;
+}
+
+footer div > * {
+  padding-bottom: 3.1dvh;
 }
 
 a.external-link {
@@ -532,21 +536,13 @@ section#artist-statement-and-cv {
   footer div#contact {
     width: 63vw !important;
     flex-shrink: 0;
-    padding-bottom: 0 !important;
     height: auto;
     margin-top: auto !important;
     margin-bottom: auto !important;
   }
 
   footer div#language {
-    margin-top: 6.5dvh;
-  }
-
-  #index > * {
-    overflow-y: hidden;
-  }
-
-  #index footer {
+    height: auto;
   }
 
 }
