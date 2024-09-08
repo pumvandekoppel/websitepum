@@ -511,6 +511,10 @@ section#artist-statement-and-cv {
     margin-right: 3vw !important;
   }
 
+  header {
+    margin-bottom: 0;
+  }
+
   section {
     margin-top: max(1.6dvh, 34px);
   }
