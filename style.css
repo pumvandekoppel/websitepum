@@ -18,6 +18,8 @@ body {
   width: 94vw;
   height: 100dvh;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0;
   margin-top: 0;
   transform-origin: left;
@@ -181,6 +183,8 @@ header {
   margin: 0;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: max(1.6dvh, 34px);
+
 }
 
 header h2 {
@@ -216,6 +220,8 @@ header a#about-button {
 
 section {
   height: calc(100dvh - 20dvh);
+  display: flex;
+  flex-direction: column;
 }
 
 section h3 {
@@ -364,6 +370,16 @@ figure figcaption {
   margin-bottom: 0 !important;
 }
 
+figure figcaption {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+figure figcaption span.credits {
+  text-align: right;
+}
+
 figure figcaption > p {
   margin: 0;
   z-index: 1;
@@ -495,12 +511,12 @@ section#artist-statement-and-cv {
     margin-right: 3vw !important;
   }
 
-  section#artist-statement-and-cv {
-    justify-content: initial;
+  section {
+    margin-top: max(1.6dvh, 34px);
   }
 
-  header {
-    margin-bottom: max(1.6dvh, 34px);
+  section#artist-statement-and-cv {
+    justify-content: initial;
   }
 
   header h2 {
