@@ -49,7 +49,7 @@ h1 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 a {
@@ -215,7 +215,7 @@ aside p,
 aside ol,
 aside ul {
   max-width: 55ch;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /* ************************** footer */
