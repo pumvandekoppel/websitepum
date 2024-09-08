@@ -227,8 +227,6 @@ div#push {
   width: 94vw;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 0;
-  
 }
 
 footer {
@@ -524,14 +522,16 @@ section#artist-statement-and-cv {
     height: auto;
     position: initial;
     margin-top: auto;
+    padding-bottom: 0;
   }
 
   footer div#contact {
     width: 63vw !important;
-    margin-top: 1.5dvh !important;
     flex-shrink: 0;
     padding-bottom: 0 !important;
     height: auto;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
   }
 
   footer div#language {
