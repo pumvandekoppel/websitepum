@@ -472,7 +472,7 @@ section#artist-statement-and-cv {
   }
 
   header {
-    margin-bottom: 1.6dvh;
+    margin-bottom: max(1.6dvh, 34px);
   }
 
   header h2 {
