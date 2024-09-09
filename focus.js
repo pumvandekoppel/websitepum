@@ -1,16 +1,19 @@
 var focused = true;
 
 const aside = document.getElementsByTagName("aside")[0];
+const gradient = document.getElementById("gradient");
 const images = document.getElementsByTagName("img");
 const main = document.getElementsByTagName("main")[0];
 
 function unfocus() {
   if (focused == true) {
     aside.style.left = "calc(3vw + 1px)";
+    gradient.style.left = "calc(97vw)"
     scheef();
     focused = false;
   } else {
-    aside.style.left = "-94vw";
+    aside.style.left = "-95vw";
+    gradient.style.left = "-1vw"
     focused = true;
   }
 }
