@@ -404,6 +404,13 @@ figure figcaption > small {
   padding-top: 3.8dvh;
 }
 
+figcaption small {
+  flex-shrink: 0;
+  margin-bottom: 0 !important;
+  margin-left: 12px !important;
+  align-self: flex-end;
+}
+
 div#info-button a {
   color: #080c0e;
   opacity: 72%;
@@ -597,6 +604,10 @@ div #dot-dot-dot hr {
 
   figcaption > * {
     vertical-align: bottom;
+  }
+
+  figcaption small {
+    margin-left: 0 !important;
   }
 
   footer {
