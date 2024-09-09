@@ -242,6 +242,10 @@ section h3 {
   margin-top: 0;
 }
 
+section .down {
+  margin-top: auto !important;
+}
+
 aside p,
 aside ol,
 aside ul {
@@ -574,6 +578,7 @@ div #dot-dot-dot hr {
 
   section > h3 {
     font-size: 1.3em !important;
+    margin-bottom: 0;
   }
 
   section > * {
@@ -608,6 +613,10 @@ div #dot-dot-dot hr {
 
   figcaption small {
     margin-left: 0 !important;
+  }
+
+  figcaption .down {
+    margin-top: auto !important;
   }
 
   footer {
