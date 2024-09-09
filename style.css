@@ -460,6 +460,7 @@ header a span#name {
 
 #websites ul li {
   margin-left: -42px;
+  margin-right: 40px;
   max-width: 47ch;
 }
 
