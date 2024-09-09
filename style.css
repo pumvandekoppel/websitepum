@@ -390,6 +390,10 @@ figure img {
   min-width: auto;
 }
 
+figure iframe {
+  width: 47vw;
+}
+
 figure figcaption {
   padding: 0;
   vertical-align: middle;
@@ -608,6 +612,10 @@ div #dot-dot-dot hr {
 
   figure img {
     max-width: 94vw;
+  }
+
+  figure iframe {
+    width: 94vw;
   }
 
   figcaption {
