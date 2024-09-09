@@ -234,11 +234,12 @@ section {
   max-width: 55ch;
   display: flex;
   flex-direction: column;
+  z-index: 3;
 }
 
 section h3 {
   font-size: min(1.25em, 1.75vw);
-  margin-top: 1.6dvh;
+  margin-top: 0;
 }
 
 aside p,
@@ -268,7 +269,7 @@ footer {
   width: auto;
   margin: 0;
   padding: 0;
-  z-index: 3;
+  z-index: 1;
   background-color: #fefefe;
   /* margin-bottom: 3.1dvh; */
 }
