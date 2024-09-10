@@ -248,6 +248,7 @@ section h3 {
 
 section .down {
   margin-top: auto !important;
+  margin-bottom: 7.5dvh;
 }
 
 aside p,
