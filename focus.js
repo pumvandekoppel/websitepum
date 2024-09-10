@@ -7,7 +7,7 @@ const main = document.getElementsByTagName("main")[0];
 
 function unfocus() {
   if (focused == true) {
-    aside.style.left = "calc(3vw + 1px)";
+    aside.style.left = "calc(3vw + 1px)"
     gradient.style.left = "calc(97vw)"
     scheef();
     focused = false;

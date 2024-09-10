@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pum van de Koppel</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script>
       /*to prevent Firefox FOUC, this must be here*/
       let FF_FOUC_FIX;
     </script>
+        <script src="scheef.js"></script>
+        <script src="lang.js"></script>
+        <script src="focus.js"></script>
   </head>
   <body>
     <aside class="info">
@@ -25,23 +31,44 @@
           ><span class="nl">knopen aan het ontwarren</span>.
         </h2>
       </header>
-      <section id="schilderijen-voor-een-on-zinnige-monarchie"  onclick="unfocus();changeEventListener()">
+      <section
+        onclick="unfocus();changeEventListener()"
+      >
         <h3 class="en"><em>Isolation variation</em> [2021]</h3>
         <h3 class="nl"><em>Isolatievariatie</em>[2021]</h3>
         <p class="en">
-          <span class="name">Pum van de Koppel</span> made a series of works in the shower from 2019 to 2021. The work <em>Isolation variation</em> was made during the lockdown in January 2021. <br>He is planning to make a small publication to bring the shower works together, and to make sense of them. <br><br>The grid of the tiled shower returns in later works such as <a href="structureren.html">square root</a> and the blue <a href="knoeien.html">diagrams</a>. There also, as a structure to map out a contrast against. 
+          <span class="name">Pum van de Koppel</span> made a series of works in
+          the shower from 2019 to 2021. The work
+          <em>Isolation variation</em> was made during the lockdown in January
+          2021. <br />He is planning to make a small publication to bring the
+          shower works together, and to make sense of them. <br /><br />The grid
+          of the tiled shower returns in later works such as
+          <a href="structureren.html">square root</a> and the blue
+          <a href="knoeien.html">diagrams</a>. There also, as a structure to map
+          out a contrast against.
         </p>
         <p class="nl">
-          <span class="name">Pum van de Koppel</span> maakte tussen 2019 en 2021 een serie werken in de douche. Het werk <em>Isolatievariatie</em> werd gemaakt tijdens de lockdown in Januari 2021. <br>Hij is van plan om een kleine publicatie te maken om de douche kunstwerken bij elkaar te brengen, en om ze te proberen doorgronden. <br><br>Het raamwerk van de douchetegels komt terug in later werk zoals <a href="structureren.html">vierkantswortel</a> en de blauwe <a href="knoeien.html">diagrammen</a>. Daar net zo, als een structuur om een contrast op te bouwen. 
+          <span class="name">Pum van de Koppel</span> maakte tussen 2019 en 2021
+          een serie werken in de douche. Het werk <em>Isolatievariatie</em> werd
+          gemaakt tijdens de lockdown in Januari 2021. <br />Hij is van plan om
+          een kleine publicatie te maken om de douche kunstwerken bij elkaar te
+          brengen, en om ze proberen te doorgronden. <br /><br />Het rasterpatroon
+          van de douchetegels komt terug in later werk zoals
+          <a href="structureren.html">vierkantswortel</a> en de blauwe
+          <a href="knoeien.html">diagrammen</a>. Daar net zo, als een structuur
+          om een contrast vanuit op te bouwen.
         </p>
       </section>
       <footer>
         <div id="contact">
           <p>
-            <span class="name">
-              Pum van de Koppel</span>
-            <span class="en">&#32;is</span><span class="nl">&#32;is aan het</span>
-            <a class="external-link" href="mailto:pumvandekoppel@gmail.com " id="mail-button"
+            <span class="name"> Pum van de Koppel</span>
+            <span class="en">&#32;is</span
+            ><span class="nl">&#32;is aan het</span>
+            <a
+              class="external-link"
+              href="mailto:pumvandekoppel@gmail.com "
+              id="mail-button"
               ><span class="en">&#32;corresponding&#32;</span
               ><span class="nl">&#32;corresponderen&#32;</span></a
             >
@@ -53,11 +80,28 @@
     <div class="hide-on-desktop" id="gradient"></div>
 
     <main onclick="unfocus();changeEventListener()">
-      <figure>
-        <iframe src="https://player.vimeo.com/video/823773871?badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479" allow="fullscreen;" style="margin-top: auto; margin-bottom: auto; height: 100%; border: 0;" title="'Isolatievariatie' (2021)"></iframe>
-        <figcaption>
-          <p class="en">stopmotion video with sound (35 seconds) - isolation tubes, tiewraps, shower</p>
-          <p class="nl">stopmotion video met geluid (35 seconden) - isolatiebuizen, tiewraps, douche</p>
+      <figure onclick="unfocus();changeEventListener()">
+        <iframe onended="unfocus();changeEventListener()"
+          src="https://player.vimeo.com/video/823773871?badge=0&amp;loop=1;autoplay=1&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay;fullscreen"
+          style="
+            z-index: 1;
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 100%;
+            border: 0;
+          "
+          title="'Isolatievariatie' (2021)"
+        ></iframe>
+        <figcaption onclick="unfocus();changeEventListener()">
+          <p class="en">
+            stopmotion video with sound (35 seconds) - isolation tubes,
+            tiewraps, shower
+          </p>
+          <p class="nl">
+            stopmotion video met geluid (35 seconden) - isolatiebuizen,
+            tiewraps, douche
+          </p>
         </figcaption>
       </figure>
     </main>
