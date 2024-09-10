@@ -10,8 +10,8 @@
    xmp:Rating="1"
    xmpMM:DerivedFrom="20231025T192258--work-household-social-selfcare-other__exhibition.jpg"
    darktable:import_timestamp="63861584911960317"
-   darktable:change_timestamp="63861585015770788"
-   darktable:export_timestamp="-1"
+   darktable:change_timestamp="63861585040362539"
+   darktable:export_timestamp="63861585152413825"
    darktable:print_timestamp="-1"
    darktable:xmp_version="5"
    darktable:raw_params="0"
@@ -19,7 +19,7 @@
    darktable:history_end="5"
    darktable:iop_order_version="3"
    darktable:history_basic_hash="276b905b5a3ded4dea46110c7116222b"
-   darktable:history_current_hash="bccabc0230c5c23f4d293de8202737dd">
+   darktable:history_current_hash="e448ba598c8aa0405ae504e65c8ad4ea">
    <darktable:masks_history>
     <rdf:Seq/>
    </darktable:masks_history>
@@ -74,7 +74,7 @@
       darktable:operation="ashift"
       darktable:enabled="1"
       darktable:modversion="5"
-      darktable:params="gz08eJxjYEAHCk4MDA32DAwnoDQDAxMDA0PLJlbT7//r7Ts7OMD0hUh75+8h653fsvC7SFmsd/ZMYnRhCzjszPWZwWXyYQFn3goOlyiRr05nr3c5v3j6w0nn43unjCPtzn5X3jtJ/O91xrB2FIyCYQRYiFAEALd9Jyk="
+      darktable:params="gz07eJxzdDHad/hEuE258Hybd7sXWDEwKDgxMDTYMzCcgNIMDEwMDAzaER+ttbbV2kdzt9j4qNXbX4i0d/4est75LQu/i5TFemfPJEYXtoDDzlyfGVwmHxZw5q3gcIkS+ep09nqX84unP5x0Pr53yjjS7ux35b2TxP9eZ4ZRMAqGMWAhQhEAQdMsHw=="
       darktable:multi_name=""
       darktable:multi_name_hand_edited="0"
       darktable:multi_priority="0"

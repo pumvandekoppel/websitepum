@@ -97,3 +97,7 @@ function swipe(e, duration) {
     }
   }
 }
+
+function unfocusWithDelay() {
+  setTimeout(unfocus(), 35000);
+}

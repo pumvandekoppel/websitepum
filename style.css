@@ -234,7 +234,7 @@ header a#about-button:hover {
 /***************************************** section */
 
 section {
-  height: calc(100dvh - 20dvh);
+  height: 100%;
   max-width: 55ch;
   display: flex;
   flex-direction: column;
@@ -394,8 +394,12 @@ figure img {
   min-width: auto;
 }
 
-figure iframe {
+figure div#isolatie-variatie {
   width: 47vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   z-index: 1;
 }
 
@@ -592,10 +596,6 @@ div #dot-dot-dot hr {
     transition-delay: 0.44s;
   }
 
-  section {
-    height: auto !important;
-  }
-
   section > h3 {
     font-size: 1.3em !important;
     margin-bottom: 0;
@@ -619,8 +619,9 @@ div #dot-dot-dot hr {
     max-width: 94vw;
   }
 
-  figure iframe {
+  figure div#isolatie-variatie {
     width: 94vw;
+
   }
 
   figcaption {
