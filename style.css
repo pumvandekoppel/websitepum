@@ -395,6 +395,7 @@ figure img {
   min-width: auto;
 }
 
+figure div#slideshow-of-mathematical-objects,
 figure div#isolatie-variatie {
   width: 47vw;
   margin-left: auto;
@@ -620,6 +621,7 @@ div #dot-dot-dot hr {
     max-width: 94vw;
   }
 
+  figure div#slideshow-of-mathematical-objects,
   figure div#isolatie-variatie {
     width: 94vw;
 

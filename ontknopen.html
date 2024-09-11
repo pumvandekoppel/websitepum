@@ -96,30 +96,30 @@
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script>
       const options = {
-          id: 823773871,
-          color: "8C9193",
-          dnt: true,
-          title: false,
-          byline: false,
-          portrait: false,
-          vimeo_logo: false,
-          airplay: false,
-          chromecast: false,
-          muted: false,
-          speed: false,
-          volume: false,
-          watch_full_video: false,
-          responsive: true,
-          pip: false,
-          loop: false,
+        id: 823773871,
+        color: "8C9193",
+        dnt: true,
+        title: false,
+        byline: false,
+        portrait: false,
+        vimeo_logo: false,
+        airplay: false,
+        chromecast: false,
+        muted: false,
+        speed: false,
+        volume: false,
+        watch_full_video: false,
+        responsive: true,
+        pip: false,
+        loop: false,
       };
-  
-      const player = new Vimeo.Player('isolatie-variatie', options);
-  
-      player.on('ended', function() {
-          unfocus();
-          changeEventListener();
+
+      const player = new Vimeo.Player("isolatie-variatie", options);
+
+      player.on("ended", function () {
+        unfocus();
+        changeEventListener();
       });
-  </script>
+    </script>
   </body>
 </html>
