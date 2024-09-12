@@ -238,7 +238,7 @@ section {
   max-width: 55ch;
   display: flex;
   flex-direction: column;
-  z-index: 3;
+  max-height: calc(100dvh - 11.6dvh - 10dvh);
 }
 
 section h3 {
@@ -248,7 +248,6 @@ section h3 {
 
 section .down {
   margin-top: auto !important;
-  margin-bottom: 7.5dvh;
 }
 
 aside p,
@@ -273,8 +272,7 @@ div#push {
 
 footer {
   position: fixed;
-  bottom: 0;
-  height: auto;
+  bottom: 0.8dvh;
   width: auto;
   margin: 0;
   padding: 0;
@@ -338,7 +336,11 @@ div#gradient {
   left: calc(97vw);
   height: 100%;
   width: 4vw;
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 100%); 
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   transition: left 0.88s ease-in-out;
 }
 
@@ -510,6 +512,26 @@ header a span#name {
   border-color: #887c82;
 } */
 
+/******************** mixen */
+
+#mixen ul {
+  list-style: circle;
+}
+
+#mixen figure img {
+  width: 500px;
+}
+
+#mixen figure figcaption {
+  position: relative;
+}
+
+#mixen figure figcaption iframe {
+  position: absolute;
+  width: 100%;
+  bottom: 3.7dvh;
+}
+
 /*************************************** about */
 
 /* section#artist-statement-and-cv {
@@ -520,7 +542,7 @@ header a span#name {
 
 div#dot-dot-dot {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   margin-left: auto;
   margin-right: auto;
   gap: max(1.6dvh, 34px);
@@ -547,7 +569,7 @@ div #dot-dot-dot hr {
 
 @media screen and (max-width: 809px) {
   #index h1 {
-    font-size: 4vmax;
+    font-size: 4.2vmax;
   }
 
   .hide-on-desktop {
@@ -583,6 +605,11 @@ div #dot-dot-dot hr {
 
   section {
     margin-top: max(1.6dvh, 34px);
+    max-height: unset;
+  }
+
+  section .down {
+    margin-top: initial;
   }
 
   section#artist-statement-and-cv {
@@ -607,6 +634,25 @@ div #dot-dot-dot hr {
     font-size: 1em !important;
   }
 
+  footer {
+    width: 94vw;
+
+    position: static;
+    padding-bottom: 0;
+  }
+
+  footer div#contact {
+    width: 63vw !important;
+    flex-shrink: 0;
+    height: auto;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  footer div#language {
+    height: auto;
+  }
+
   main {
     transform-origin: right;
     width: 94vw;
@@ -624,7 +670,6 @@ div #dot-dot-dot hr {
   figure div#slideshow-of-mathematical-objects,
   figure div#isolatie-variatie {
     width: 94vw;
-
   }
 
   figcaption {
@@ -645,26 +690,5 @@ div #dot-dot-dot hr {
 
   figcaption .down {
     margin-top: auto !important;
-  }
-
-  footer {
-    width: 94vw;
-
-    height: auto;
-    position: initial;
-    margin-top: auto;
-    padding-bottom: 0;
-  }
-
-  footer div#contact {
-    width: 63vw !important;
-    flex-shrink: 0;
-    height: auto;
-    margin-top: auto !important;
-    margin-bottom: auto !important;
-  }
-
-  footer div#language {
-    height: auto;
   }
 }
