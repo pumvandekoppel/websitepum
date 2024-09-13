@@ -1,20 +1,65 @@
-var focused = true;
+var focused;
 
 const aside = document.getElementsByTagName("aside")[0];
 const gradient = document.getElementById("gradient");
-const images = document.getElementsByTagName("img");
 const main = document.getElementsByTagName("main")[0];
+const images = document.getElementsByTagName("img");
 
-function unfocus() {
-  if (focused == true) {
-    aside.style.left = "calc(3vw + 1px)"
-    gradient.style.left = "calc(97vw)"
-    scheef();
+const desktopMediaQuery = window.matchMedia("(min-width: 809px)");
+const mobileMediaQuery = window.matchMedia("(max-width: 808px)")
+
+function checkFocus() {
+  if (desktopMediaQuery.matches) {
     focused = false;
-  } else {
-    aside.style.left = "-95vw";
-    gradient.style.left = "-1vw"
+    console.log("breed");
+  } else if (mobileMediaQuery.matches) {
     focused = true;
+    console.log("smal");
+  }
+}
+
+window.onload = function() {
+  checkFocus();
+}
+
+function focusSwitch() {
+  if (desktopMediaQuery.matches) {
+    console.log("lappie")
+    if (focused == false) {
+      aside.style.marginLeft = "calc(-72vw - 1px)";
+      main.style.position = "absolute";
+      main.style.width = "100%";
+      for (let image of images) {
+        image.style.maxWidth = "94vw";
+        image.style.transition = "max-width 1.56s ease-out";
+      }
+      aside.style.transition = "margin-left .68s ease-in";
+      main.style.transition = "width 0.88s linear";
+      focused = true;
+    } else if (focused == true) {
+      main.style.position = "initial";
+      aside.style.marginLeft = "0px";
+      main.style.width = "auto";
+      for (let image of images) {
+        image.style.maxWidth = "calc(94vw - 74ch - 3vw - 3vw)";
+        image.style.transition = "max-width .88s linear";
+      }
+      aside.style.transition = "margin-left .89s ease-in";
+      main.style.transition = "width 0s linear";
+      focused = false;
+    }
+  } else if (mobileMediaQuery.matches) {
+    console.log("pokkie");
+    if (focused == true) {
+      aside.style.left = "calc(3vw + 1px)";
+      gradient.style.left = "calc(97vw)";
+      scheef();
+      focused = false;
+    } else {
+      aside.style.left = "-95vw";
+      gradient.style.left = "-1vw";
+      focused = true;
+    }
   }
 }
 
@@ -27,7 +72,7 @@ let touchStartTime, clientX, clientY;
 
 function touchStart(e) {
   // Prevent the default behavior (e.g. scrolling) of the touch event
-//   e.preventDefault();
+  //   e.preventDefault();
 
   // Record the timestamp of the touch event
   touchStartTime = Date.now();

@@ -30,7 +30,7 @@
       </header>
       <section
         id="schilderijen-voor-een-on-zinnige-monarchie"
-        onclick="unfocus();changeEventListener()"
+        onclick="focusSwitch();changeEventListener()"
       >
         <h3 class="en"><em>Square root (&#8730;&#32;)</em> [2022]</h3>
         <h3 class="nl"><em>Vierkantswortel (&#8730;&#32;)</em> [2022]</h3>
@@ -115,7 +115,7 @@
     </aside>
     <div class="hide-on-desktop" id="gradient"></div>
 
-    <main onclick="unfocus();changeEventListener()">
+    <main onclick="focusSwitch();changeEventListener()">
       <figure>
         <img
           src="assets/structureren/20221211T141325--square-root__performance_installation_drawing.jpg"
@@ -198,7 +198,7 @@
       );
 
       player.on("ended", function () {
-        unfocus();
+        focusSwitch();
         changeEventListener();
       });
     </script>

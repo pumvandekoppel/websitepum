@@ -25,10 +25,10 @@
           >
           <a href="about.html" id="about-button"> is </a
           ><span class="en">untangling.</span
-          ><span class="nl">knopen aan het ontwarren.</span>
+          ><span class="nl">knopen aan het ontknopen.</span>
         </h2>
       </header>
-      <section onclick="unfocus();changeEventListener()">
+      <section onclick="focusSwitch();changeEventListener()">
         <h3 class="en"><em>Isolation variation</em> [2021]</h3>
         <h3 class="nl"><em>Isolatievariatie</em>[2021]</h3>
         <p class="en">
@@ -38,8 +38,8 @@
           2021. <br />He is planning to make a small publication to bring the
           shower works together, and to make sense of them. <br /><br />The grid
           of the tiled shower returns in later works such as
-          <a href="structureren.html">square root</a> and the blue
-          <a href="knoeien.html">diagrams</a>. There also, as a structure to map
+          <a href="structureren.html">Square root</a> and the
+          <a href="knoeien.html">Diagrams</a>. There also, as a structure to map
           out a contrast against.
         </p>
         <p class="nl">
@@ -49,8 +49,8 @@
           een kleine publicatie te maken om de douche kunstwerken bij elkaar te
           brengen, en om ze proberen te doorgronden. <br /><br />Het
           rasterpatroon van de douchetegels komt terug in later werk zoals
-          <a href="structureren.html"><em>Vierkantswortel</em></a> en de blauwe
-          <a href="knoeien.html">diagrammen</a>. Daar net zo, als een structuur
+          <a href="structureren.html"><em>Vierkantswortel</em></a> en de
+          <a href="knoeien.html"><em>Diagrammen</em></a>. Daar net zo, als een structuur
           om een contrast vanuit op te bouwen.
         </p>
       </section>
@@ -117,7 +117,7 @@
       const player = new Vimeo.Player("isolatie-variatie", options);
 
       player.on("ended", function () {
-        unfocus();
+        focusSwitch();
         changeEventListener();
       });
     </script>
