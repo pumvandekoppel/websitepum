@@ -117,6 +117,7 @@
       const player = new Vimeo.Player("isolatie-variatie", options);
 
       player.on("ended", function () {
+        checkFocus();
         focusSwitch();
         changeEventListener();
       });
