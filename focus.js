@@ -1,10 +1,10 @@
 var focused;
 
+const body = document.getElementsByTagName("body")[0];
 const aside = document.getElementsByTagName("aside")[0];
 const gradient = document.getElementById("gradient");
 const main = document.getElementsByTagName("main")[0];
-const images = document.getElementsByTagName("img");
-
+var images = document.getElementsByTagName("img");
 const desktopMediaQuery = window.matchMedia("(min-width: 809px)");
 const mobileMediaQuery = window.matchMedia("(max-width: 808px)")
 
@@ -24,9 +24,9 @@ window.onload = function() {
 
 function focusSwitch() {
   if (desktopMediaQuery.matches) {
-    console.log("lappie")
     if (focused == false) {
       aside.style.marginLeft = "calc(-72vw - 1px)";
+      body.style.width = "100vw";
       main.style.position = "absolute";
       main.style.width = "100%";
       for (let image of images) {
@@ -37,11 +37,17 @@ function focusSwitch() {
       main.style.transition = "width 0.88s linear";
       focused = true;
     } else if (focused == true) {
+      body.style.width = "94vw"
       main.style.position = "initial";
       aside.style.marginLeft = "0px";
       main.style.width = "auto";
       for (let image of images) {
+        if (document.getElementsByClassName("row").length > 0) {
+          image.style.maxWidth = "23vw"
+        }
+        else {
         image.style.maxWidth = "calc(94vw - 74ch - 3vw - 3vw)";
+        }
         image.style.transition = "max-width .88s linear";
       }
       aside.style.transition = "margin-left .89s ease-in";
@@ -49,7 +55,6 @@ function focusSwitch() {
       focused = false;
     }
   } else if (mobileMediaQuery.matches) {
-    console.log("pokkie");
     if (focused == true) {
       aside.style.left = "calc(3vw + 1px)";
       gradient.style.left = "calc(97vw)";

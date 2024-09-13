@@ -32,6 +32,8 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "WONK" 1;
+
+  transition: width .88s;
 }
 
 body > * {
