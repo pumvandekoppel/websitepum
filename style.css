@@ -306,10 +306,10 @@ header a {
 }
 
 a.external-link {
-  text-decoration: none;
+  text-decoration: alias;
   color: #8c9193;
   opacity: 60%;
-  cursor: alias;
+  cursor: alias !important;
   transition: opacity 0.2s;
   /* color: rgb(0, 0, 238); */
   margin-top: 0;
