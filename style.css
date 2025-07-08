@@ -292,7 +292,11 @@ footer p {
 }
 
 footer div > * {
-  /*padding-bottom: 3.1dvh;*/
+  padding-bottom: 3.1dvh;
+}
+
+body#index footer div > * {
+    padding-bottom: 1.5dvh;
 }
 
 a {
