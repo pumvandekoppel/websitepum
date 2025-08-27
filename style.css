@@ -331,6 +331,10 @@ main a.external-link{
   color: #bfb11a;
 }
 
+#rood {
+  color: #bf4e1a;
+}
+
 footer #language {
   text-align: right;
 }
@@ -420,6 +424,10 @@ figure div#isolatie-variatie, figure div#wine-video {
   margin-top: auto;
   margin-bottom: auto;
   z-index: 1;
+}
+
+figure div#wine-video {
+  width: 28.5vw;
 }
 
 figure figcaption {
