@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pum van de Koppel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+        rel="stylesheet" />
+    <script>
+        /*to prevent Firefox FOUC, this must be here*/
+        let FF_FOUC_FIX;
+    </script>
+</head>
+
+<body>
+    <aside class="info">
+        <header>
+            <h2>
+                <a href="index.html"><span class="name" class="back-button">Pum van de Koppel</span></a>
+                <a href="about.html" id="about-button"> is </a><span class="en">infiltrating.</span><span class="nl">aan
+                    het infiltreren.</span>
+            </h2>
+        </header>
+        <section id="schilderijen-voor-een-on-zinnige-monarchie" onclick="focusSwitch();changeEventListener()">
+            <h3 class="en"><em>Sous titre</em> [2025]</h3>
+            <h3 class="nl"><em>Sous titre</em> [2025]</h3>
+            <p class="en">
+                Short video document from within a glass of wine. Room temperature. Distinguishing faces above, hardly
+                hearing from below. (<span class="name">Pum van de Koppel</span> doesn't really know what these tipsy
+                people are talking about.) Subtitles that are
+                around the corner talking round, the door walking.
+            </p>
+            <p class="nl">
+                Kort video document vanuit een glas wijn. Kamer temperatuur. Boven zijn gezichte te onderscheiden, maar
+                het is moeilijk te horen van onder.
+                (<span class="name">Pum van de Koppel</span> weet niet waar deze aangeschoten mensen het allemaal over
+                hebben. Ondertiteling die de hoek om praat, de deur loopt.
+            </p>
+        </section>
+        <footer>
+            <p class="en">
+                Link:
+                <a class="external-link" id="geel" href="https://www.hetresort.nl/hints-of-red.html"><em>het resort</em></a><br />
+            </p>
+            <p class="nl">
+                Link:
+                <a class="external-link" id="geel" href="https://www.hetresort.nl/hints-of-red.html"><em>het resort</em></a><br />
+            </p>
+            <div id="contact">
+                <p>
+                    <span class="name"> Pum van de Koppel</span>
+                    <span class="en">&#32;is</span><span class="nl">&#32;is aan het</span>
+                    <a class="external-link" href="mailto:pumvandekoppel@gmail.com " id="mail-button"><span
+                            class="en">&#32;corresponding&#32;</span><span
+                            class="nl">&#32;corresponderen&#32;</span></a>
+                    via e&#8209;mail.
+                </p>
+            </div>
+        </footer>
+    </aside>
+    <div class="hide-on-desktop" id="gradient"></div>
+
+    <main onclick="focusSwitch();changeEventListener()">
+        <figure>
+            <div id="wine-video"></div>
+            <figcaption>
+                <p class="en">
+                    <em>Sous titre</em> [2025] - video (10 minutes and
+                    49 seconds) beamed on wall
+                </p>
+                <p class="nl">
+                    <em>Sous titre</em> [2025] - video (10 minuten en
+                    49 seconden) geprojecteerd op muur
+                </p>
+            </figcaption>
+        </figure>
+    </main>
+
+    <script src="scheef.js"></script>
+    <script src="lang.js"></script>
+    <script src="focus.js"></script>
+    <script src="lazyload.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        const options = {
+            id: 1113338743,
+            color: "8C9193",
+            dnt: true,
+            title: false,
+            byline: false,
+            portrait: false,
+            vimeo_logo: false,
+            airplay: false,
+            chromecast: false,
+            muted: true,
+            speed: false,
+            volume: false,
+            watch_full_video: false,
+            responsive: true,
+            pip: false,
+            loop: false,
+            background: true,
+        };
+
+        const player = new Vimeo.Player(
+            "wine-video",
+            options
+        );
+
+        player.on("ended", function () {
+            focusSwitch();
+            changeEventListener();
+        });
+    </script>
+</body>
+
+</html>

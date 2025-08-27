@@ -413,7 +413,7 @@ figure img {
 }
 
 figure div#slideshow-of-mathematical-objects,
-figure div#isolatie-variatie {
+figure div#isolatie-variatie, figure div#wine-video {
   width: 47vw;
   margin-left: auto;
   margin-right: auto;
@@ -703,7 +703,7 @@ div #dot-dot-dot hr {
   }
 
   figure div#slideshow-of-mathematical-objects,
-  figure div#isolatie-variatie {
+  figure div#isolatie-variatie, figure div#wine-video {
     width: 94vw;
   }
 
