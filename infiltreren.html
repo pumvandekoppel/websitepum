@@ -104,7 +104,7 @@
             responsive: true,
             pip: false,
             loop: false,
-            background: true,
+            background: false,
         };
 
         const player = new Vimeo.Player(
@@ -113,6 +113,7 @@
         );
 
         player.on("ended", function () {
+            checkFocus();
             focusSwitch();
             changeEventListener();
         });
