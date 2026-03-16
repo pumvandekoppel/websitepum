@@ -437,6 +437,7 @@ figure div#wine-video {
 }
 
 figure figcaption {
+  display: flex;
   padding: 0;
   vertical-align: middle;
   flex-basis: auto;
@@ -763,6 +764,7 @@ div #dot-dot-dot hr {
 }
 
   figcaption {
+	display: initial;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0 !important;
