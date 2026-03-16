@@ -6,15 +6,14 @@ const gradient = document.getElementById("gradient");
 const main = document.getElementsByTagName("main")[0];
 var images = document.getElementsByTagName("img");
 const desktopMediaQuery = window.matchMedia("(min-width: 809px)");
-const mobileMediaQuery = window.matchMedia("(max-width: 808px)")
+const mobileMediaQuery = window.matchMedia("(max-width: 808px)");
+const contextButton = document.getElementById("context-button");
 
 function checkFocus() {
   if (desktopMediaQuery.matches) {
     focused = false;
-    console.log("breed");
   } else if (mobileMediaQuery.matches) {
     focused = true;
-    console.log("smal");
   }
 }
 
@@ -29,6 +28,7 @@ function focusSwitch() {
       body.style.width = "100vw";
       main.style.position = "absolute";
       main.style.width = "100%";
+
       for (let image of images) {
         image.style.maxWidth = "94vw";
         image.style.transition = "max-width 1.56s ease-out";
@@ -37,6 +37,8 @@ function focusSwitch() {
       main.style.transition = "width 0.88s linear";
       focused = true;
     } else if (focused == true) {
+	  contextButton.style.color = "black";
+	  console.log("hoiiiiii");
       body.style.width = "94vw"
       main.style.position = "initial";
       aside.style.marginLeft = "0px";
@@ -56,11 +58,15 @@ function focusSwitch() {
     }
   } else if (mobileMediaQuery.matches) {
     if (focused == true) {
+	  contextButton.style.color = "#404142";
+	  contextButton.style.paddingLeft = "5px";
+	  contextButton.style.paddingRight = "5px";
       aside.style.left = "calc(3vw + 1px)";
       gradient.style.left = "calc(97vw)";
       scheef();
       focused = false;
     } else {
+	  contextButton.style.color = "white";
       aside.style.left = "-95vw";
       gradient.style.left = "-1vw";
       focused = true;

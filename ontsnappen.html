@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pum van de Koppel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
+  </head>
+  <body><p id="context-button" class="hide-context-button-on-desktop" onclick="focusSwitch();changeEventListener()">?</p>
+    <aside class="info">
+      <header>
+        <h2>
+          <a href="index.html"
+            ><span class="name" class="back-button">Pum van de Koppel</span></a
+          >
+          <a href="about.html" id="about-button"> is </a
+          ><span class="en">escaping.</span
+          ><span class="nl">ontsnappen.</span>
+        </h2>
+      </header>
+      <section onclick="focusSwitch();changeEventListener()">
+        <h3 class="en"><em>Untitled (Adolescence)</em> [2018]</h3>
+        <h3 class="nl"><em>Zonder titel (Adolescentie)</em> [2018]</h3>
+        <p class="en">
+          A video from 2018 where <span class="name">Pum van de Koppel</span> cycles from and to, in the polder above Amsterdam close to Uitdam. Rushing through the wind he notices his shadow, an ever becoming self.
+        </p>
+        <p class="nl">
+			Een video uit 2018 waar <span class="name">Pum van de Koppel</span> ergens vandaan en naartoe fietst, in de polder boven Amsterdam dichtbij Uitdam. Racend door de wind valt hem zijn schaduw op, steeds opnieuw wordend, een zelf.
+        </p>
+      </section>
+      <footer>
+        <div id="contact">
+          <p>
+            <span class="name"> Pum van de Koppel</span>
+            <span class="en">&#32;is</span
+            ><span class="nl">&#32;is aan het</span>
+            <a
+              class="external-link"
+              href="mailto:pumvandekoppel@gmail.com "
+              id="mail-button"
+              ><span class="en">&#32;corresponding&#32;</span
+              ><span class="nl">&#32;corresponderen&#32;</span></a
+            >
+            via e&#8209;mail.
+          </p>
+        </div>
+      </footer>
+    </aside>
+    <div class="hide-on-desktop" id="gradient"></div>
+
+    <main>
+      <figure>
+        <div id="adolescence"></div>
+        <figcaption>
+          <p class="en">
+            video with sound (22 seconds)
+          </p>
+          <p class="nl">
+            video met geluid (22 seconden)
+          </p>
+        </figcaption>
+      </figure>
+    </main>
+
+    <script src="scheef.js"></script>
+    <script src="lang.js"></script>
+    <script src="focus.js"></script>
+    <script src="lazyload.js"></script>
+	<script>
+	  // Load the IFrame Player API code asynchronously.
+	  var tag = document.createElement('script');
+	  tag.src = "https://www.youtube.com/player_api";
+	  var firstScriptTag = document.getElementsByTagName('script')[0];
+	  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	  // Replace the 'ytplayer' element with an <iframe> and
+	  // YouTube player after the API code downloads.
+	  var player;
+	  function onYouTubePlayerAPIReady() {
+		player = new YT.Player('adolescence', {
+		  // height: '360',
+		  // width: '640',
+		  videoId: '4E1HwithDGU',
+		});
+	  }
+	</script>
+
+  </body>
+</html>

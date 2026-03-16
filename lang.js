@@ -14,7 +14,7 @@ function nl() {
         words.style.display = "none"
     }
     for (let words of nederlands) {
-        words.style.display = "inline-block"
+        words.style.display = "inline"
     }
     lang = "nl"
 
@@ -28,7 +28,7 @@ function en() {
         words.style.display = "none"
     }
     for (let words of english) {
-        words.style.display = "inline-block"
+        words.style.display = "inline"
     }
     lang = "en"
     localStorage.setItem("lang", "en")

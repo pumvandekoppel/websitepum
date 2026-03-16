@@ -236,7 +236,7 @@ header a#about-button:hover {
   transition: opacity 0.2s;
 }
 
-/***************************************** section */
+/*******************************9********* section */
 
 section {
   max-width: 55ch;
@@ -248,8 +248,9 @@ section {
 }
 
 section h3 {
+	    margin-top: max(1.6dvh, 25px);
+
   font-size: min(1.25em, 1.75vw);
-  margin-top: 0;
 }
 
 aside p,
@@ -417,13 +418,18 @@ figure img {
 }
 
 figure div#slideshow-of-mathematical-objects,
-figure div#isolatie-variatie, figure div#wine-video {
+figure div#isolatie-variatie, figure div#wine-video, figure iframe#adolescence {
   width: 47vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
   z-index: 1;
+}
+
+figure iframe#adolescence {
+  width: 42.1vw;
+	width: 640px;
 }
 
 figure div#wine-video {
@@ -442,7 +448,7 @@ figure figcaption {
   padding-bottom: 3.7dvh;
   margin-bottom: 0 !important;
   width: 100%;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
 }
 
@@ -465,6 +471,34 @@ figcaption small {
   margin-left: 12px !important;
   align-self: flex-end;
 }
+
+p#context-button {
+	font-weight: 700;
+	padding-top: 0;
+	display: block;
+	float: right;
+	margin-right: calc(2.725dvh - 1.5vw);
+	background-color: #404142;
+	color: white;
+	border-radius: 71%;
+	padding-top: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	margin-top: -3px;
+	margin-bottom: 12px;
+	position: fixed;
+	bottom: 4vw;
+	right: 0;
+	z-index: 7;
+	transition: color .22s ease-in;
+}
+
+/* p#context-button span { */
+/* 	-webkit-background-clip: text; */
+/* 	background-clip: text; */
+/* 	-webkit-text-fill-color: transparent; */
+/* } */
 
 div#info-button a {
   color: #080c0e;
@@ -506,12 +540,6 @@ header a span#name {
 }
 
 /************************* websites */
-
-#websites figure img {
-  border-style: dotted;
-  border: 3px 3px 3px 3px;
-  padding: 3px;
-}
 
 #websites ol {
   list-style-type: lower-alpha;
@@ -592,6 +620,10 @@ div #dot-dot-dot hr {
   display: none;
 }
 
+.hide-context-button-on-desktop {
+	visibility: hidden;
+}
+
 @media screen and (max-width: 959px) {
   aside p,
   aside ol,
@@ -603,7 +635,7 @@ div #dot-dot-dot hr {
 
 @media screen and (max-width: 809px) {
   #index h1 {
-    font-size: 4.2vmax;
+    font-size: 4vmax;
   }
 
   .hide-on-desktop {
@@ -613,6 +645,10 @@ div #dot-dot-dot hr {
   .hide-on-mobile {
     display: none;
   }
+
+  .hide-context-button-on-desktop {
+		visibility: initial;
+	}
 
   body {
     display: block;
@@ -636,10 +672,11 @@ div #dot-dot-dot hr {
 
   header {
     margin-bottom: 0;
+	height: auto;
   }
 
   section {
-    margin-top: max(1.6dvh, 34px);
+    /* margin-top: max(1.6dvh, 34px); */
     max-height: 1000dvh;
   }
 
@@ -653,8 +690,13 @@ div #dot-dot-dot hr {
   }
 
   header h2 span.name {
+	display: block;
     transition-delay: 0.44s;
   }
+
+	header h2 a#about-button {
+		margin-left: 0.125ch;
+	}
 
   section > h3 {
     font-size: 1.3em !important;
@@ -711,9 +753,14 @@ div #dot-dot-dot hr {
   }
 
   figure div#slideshow-of-mathematical-objects,
-  figure div#isolatie-variatie, figure div#wine-video {
+  figure div#isolatie-variatie, figure div#wine-video, figure iframe#adolescence {
     width: 94vw;
   }
+
+	figure iframe#adolescence {
+  width: 94vw;
+  height: 52.875vw;
+}
 
   figcaption {
     margin-left: auto;
