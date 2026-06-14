@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pum van de Koppel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
+  </head>
+  <body>
+		<p id="context-button" class="hide-context-button-on-desktop" onclick="focusSwitch();changeEventListener()">?</p>
+    <aside class="info">
+      <header>
+        <h2>
+          <a href="index.html"
+            ><span class="name" class="back-button">Pum van de Koppel</span></a
+          >
+          <a href="about.html" id="about-button"> is </a
+          ><span class="en">tossing and turning.</span
+          ><span class="nl">woelen.</span>
+        </h2>
+      </header>
+      <section id="schilderijen-voor-een-on-zinnige-monarchie"  onclick="focusSwitch();changeEventListener()">
+        <h3 class="en"><em>I don't dream, I toss and turn</em> [2026]</h3>
+        <h3 class="nl"><em>Ik droom niet, ik woel</em> [2026]</h3>
+
+        <p class="nl">
+          De video <em>Van A naar A</em> word afgewisseld met de performance <em>‘Ik droom niet, ik woel’</em> waarvoor hij een vergelijkbaar ongemakkelijke tussenbeweging choreografeert, nu afgekaderd door een matras.
+        </p>
+        <p class="en"> The video <em>From A to A</em> is alternated with the performance <em>‘I don’t dream, I toss and turn’</em>, for which he choreographs a similarly awkward in-between movement, now framed by a mattress
+        </p>
+      </section>
+      <footer>
+        <div id="contact">
+          <p>
+            <span class="name">
+              Pum van de Koppel</span>
+            <span class="en">&#32;is</span><span class="nl">&#32;is aan het</span>
+            <a class="external-link" href="mailto:pumvandekoppel@gmail.com " id="mail-button"
+              ><span class="en">&#32;corresponding&#32;</span
+              ><span class="nl">&#32;corresponderen&#32;</span></a
+            >
+            via e&#8209;mail.
+          </p>
+        </div>
+      </footer>
+    </aside>
+    <div class="hide-on-desktop" id="gradient"></div>
+
+    <main onclick="focusSwitch();changeEventListener()">
+      <figure>
+        <img
+          src="assets/fietsen/20231025T173206--omw__performance.jpg"
+          alt=""
+        />
+        <figcaption>
+          <p class="en">
+            performance (5:23 minutes) - grand piano, noisy bike, gnossiene &numero; 5 by Satie, bike roller, microphone, amp
+          </p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl">
+            performance (5:23 minuten) - vleugelpiano, roestige fiets, gnossiene &numero; 5 van Satie, fietstrainer, microfoon, versterker
+          </p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="assets/fietsen/2023_10_25_documentation_pum_012.jpg"
+          alt=""
+        />
+        <figcaption>
+          <p class="en">
+            close-up bike
+          </p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl">
+            close-up fiets
+          </p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="assets/fietsen/2023_10_25_documentation_pum_009.jpg"
+          alt=""
+        />
+        <figcaption>
+          <p class="en">
+            close-up piano
+          </p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl">
+            close-up piano
+          </p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          class="lazy" data-src="assets/fietsen/2023_10_25_documentation_pum_089.jpg"
+          alt=""
+        />
+        <figcaption>
+          <p class="en">
+            audience impression
+          </p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl">
+            impressie publiek
+          </p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+    </main>
+
+    <script src="scheef.js"></script>
+    <script src="lang.js"></script>
+    <script src="focus.js"></script>
+    <script src="lazyload.js"></script>
+  </body>
+</html>
