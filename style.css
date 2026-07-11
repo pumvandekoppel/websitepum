@@ -636,7 +636,7 @@ div #dot-dot-dot hr {
 
 @media screen and (max-width: 809px) {
   #index h1 {
-    font-size: 4vmax;
+    font-size: 3.75vmax;
   }
 
   .hide-on-desktop {
