@@ -6,7 +6,6 @@ var images = document.getElementsByTagName("img");
 const desktopMediaQuery = window.matchMedia("(min-width: 809px)");
 const mobileMediaQuery = window.matchMedia("(max-width: 808px)");
 const contextButton = document.getElementById("context-button");
-const hint = document.getElementById("hint");
 
 function checkFocus() {
   if (desktopMediaQuery.matches) {
@@ -37,12 +36,10 @@ function focusSwitch() {
       aside.style.left = "calc(3vw + 1px)";
       scheef();
       focused = false;
-      hint.style.marginLeft = "45vw";
     } else {
 	  contextButton.style.color = "white";
       aside.style.left = "-95vw";
       focused = true;
-      hint.style.marginLeft = "90vw";
     }
   }
 }
