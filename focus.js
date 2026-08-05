@@ -1,13 +1,12 @@
 var focused;
-
 const body = document.getElementsByTagName("body")[0];
 const aside = document.getElementsByTagName("aside")[0];
-const gradient = document.getElementById("gradient");
 const main = document.getElementsByTagName("main")[0];
 var images = document.getElementsByTagName("img");
 const desktopMediaQuery = window.matchMedia("(min-width: 809px)");
 const mobileMediaQuery = window.matchMedia("(max-width: 808px)");
 const contextButton = document.getElementById("context-button");
+const hint = document.getElementById("hint");
 
 function checkFocus() {
   if (desktopMediaQuery.matches) {
@@ -24,36 +23,10 @@ window.onload = function() {
 function focusSwitch() {
   if (desktopMediaQuery.matches) {
     if (focused == false) {
-      aside.style.marginLeft = "calc(-72vw - 1px)";
-      body.style.width = "100vw";
-      main.style.position = "absolute";
-      main.style.width = "100%";
-
-      for (let image of images) {
-        image.style.maxWidth = "94vw";
-        image.style.transition = "max-width 1.56s ease-out";
-      }
-      aside.style.transition = "margin-left .68s ease-in";
-      main.style.transition = "width 0.88s linear";
+      aside.style.marginLeft = "-57vw";
       focused = true;
     } else if (focused == true) {
-	  contextButton.style.color = "black";
-	  console.log("hoiiiiii");
-      body.style.width = "94vw"
-      main.style.position = "initial";
-      aside.style.marginLeft = "0px";
-      main.style.width = "auto";
-      for (let image of images) {
-        if (document.getElementsByClassName("row").length > 0) {
-          image.style.maxWidth = "23vw"
-        }
-        else {
-        image.style.maxWidth = "calc(94vw - 74ch - 3vw - 3vw)";
-        }
-        image.style.transition = "max-width .88s linear";
-      }
-      aside.style.transition = "margin-left .89s ease-in";
-      main.style.transition = "width 0s linear";
+      aside.style.marginLeft = "0";
       focused = false;
     }
   } else if (mobileMediaQuery.matches) {
@@ -62,14 +35,14 @@ function focusSwitch() {
 	  contextButton.style.paddingLeft = "5px";
 	  contextButton.style.paddingRight = "5px";
       aside.style.left = "calc(3vw + 1px)";
-      gradient.style.left = "calc(97vw)";
       scheef();
       focused = false;
+      hint.style.marginLeft = "45vw";
     } else {
 	  contextButton.style.color = "white";
       aside.style.left = "-95vw";
-      gradient.style.left = "-1vw";
       focused = true;
+      hint.style.marginLeft = "90vw";
     }
   }
 }
@@ -152,8 +125,4 @@ function swipe(e, duration) {
       }
     }
   }
-}
-
-function unfocusWithDelay() {
-  setTimeout(unfocus(), 35000);
 }

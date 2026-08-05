@@ -382,6 +382,20 @@ main {
   transition: width 0.88s linear;
 }
 
+main p#hint {
+    position: sticky;
+    top: 3.5dvh;
+    margin: 0;
+    z-index: -1;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: -3vw;
+}
+
+main p#hint ~ figcaption {
+	margin-top: 19.65px;
+}
+
 figure {
   scroll-snap-align: center;
   scroll-margin-top: 0;
@@ -396,16 +410,15 @@ figure {
   height: calc(100dvh);
   flex-basis: calc(100dvh);
   width: min-content;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: auto;
+  width: calc(100% - 6vw);
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 figure img {
   max-height: 82dvh;
-  width: auto;
+  width: 100%;
   object-fit: contain;
-  max-width: calc(94vw - 74ch - 3vw - 3vw);
   margin-left: auto;
   margin-right: auto;
 
@@ -444,8 +457,8 @@ figure figcaption {
   z-index: 1;
   align-self: center;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 3vw;
+  margin-right: 3vw;
   padding-bottom: 3.7dvh;
   margin-bottom: 0 !important;
   width: 100%;
@@ -487,7 +500,7 @@ p#context-button {
 	padding-right: 5px;
 	padding-bottom: 0px;
 	margin-top: -3px;
-	margin-bottom: 9px;
+	margin-bottom: 17px;
 	position: fixed;
 	bottom: 4vw;
 	right: 0;
@@ -582,17 +595,6 @@ header a span#name {
   position: absolute;
   width: 100%;
   bottom: 3.7dvh;
-}
-
-/************************** knoeien */
-
-#knoeien div.row {
-  display: flex;
-}
-
-#knoeien figure,
-#knoeien img {
-  max-width: 23vw;
 }
 
 /*************************************** about */
@@ -743,6 +745,16 @@ div #dot-dot-dot hr {
     transform-origin: right;
     width: 94vw;
     margin-left: 0;
+  }
+ 
+  main p#hint {
+    position: sticky;
+    top: 3.5dvh;
+    margin: 0;
+    z-index: -1;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: -8px;
   }
 
   figure {
