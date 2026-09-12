@@ -2,7 +2,6 @@ var focused;
 const body = document.getElementsByTagName("body")[0];
 const aside = document.getElementsByTagName("aside")[0];
 const main = document.getElementsByTagName("main")[0];
-var images = document.getElementsByTagName("img");
 const desktopMediaQuery = window.matchMedia("(min-width: 809px)");
 const mobileMediaQuery = window.matchMedia("(max-width: 808px)");
 const contextButton = document.getElementById("context-button");
@@ -22,10 +21,13 @@ window.onload = function() {
 function focusSwitch() {
   if (desktopMediaQuery.matches) {
     if (focused == false) {
-      aside.style.marginLeft = "-57vw";
+      setTimeout('aside.style.marginLeft = "-57vw";', 40);
+      //aside.style.marginLeft = "-57vw";
+      main.classList.add("focused");
       focused = true;
     } else if (focused == true) {
-      aside.style.marginLeft = "0";
+      setTimeout('aside.style.marginLeft = "0";', 200);
+      main.classList.remove("focused");
       focused = false;
     }
   } else if (mobileMediaQuery.matches) {
@@ -35,10 +37,12 @@ function focusSwitch() {
 	  contextButton.style.paddingRight = "5px";
       aside.style.left = "calc(3vw + 1px)";
       scheef();
+      main.classList.add("focused");
       focused = false;
     } else {
 	  contextButton.style.color = "white";
       aside.style.left = "-95vw";
+      main.classList.remove("focused");
       focused = true;
     }
   }

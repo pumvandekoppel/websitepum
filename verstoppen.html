@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pum van de Koppel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
+  </head>
+  <body>
+    <aside class="info">
+      <header>
+        <h2>
+          <a href="index.html"
+            ><span class="name" class="back-button">Pum van de Koppel</span></a
+          >
+          <a href="about.html" id="about-button"> is </a
+          ><span class="en">hiding.</span
+          ><span class="nl">zich aan het verstoppen.</span>
+        </h2>
+      </header>
+      <section
+        id="schilderijen-voor-een-on-zinnige-monarchie"
+        onclick="focusSwitch();changeEventListener()"
+      >
+        <h3 class="en"><em>Perpetuum Immobile</em> [2026]</h3>
+        <h3 class="nl"><em>Perpetuum Immobile</em> [2026]</h3>
+		<p class="nl">
+                    Wat doet een vreemde kunstenaar wanneer hij geconfronteerd wordt met een vreemde omgeving? <span class="name">Pum van de Koppel</span> (1999, Amsterdam) verstopt zich.
+		    <br><br>
+                    Kunst doen kan een motor zijn om te ontsnappen uit een vaste rol. Via performance waagde <span class="name">Pum van de Koppel</span> zich eerder aan verschillende disciplines en vondt er bewegingsvrijheid door mislukking te omarmen. In zijn werken botste hij tegen ongeschreven regels, sociale codes en maatschappelijke verwachtingen die zo een nieuwe vorm kregen.
+		    <br><br>
+                    De motor staakte. Van de zomer strandde hij in Bierum. In juli en augustus verbleef hij als Artist in Residence in de Bierumer School. Het voornemen om, zoals het een kunstenaar betaamt, vanuit niets iets te maken sneuvelde al snel. Op de dijk keek hij de leegte in en bleek hij er moeilijk kaas van te kunnen maken. Er wordt wel gezegd dat stadsmensen zichzelf liever uit de weg gaan, alleen “is er een zelf zonder een sociale context?”.
+		    <br><br>
+        In Perpetuum Immobile bewaart <span class="name">Pum van de Koppel</span> zorgvuldig de afstand tussen Bierum en Den Haag (waar hij normaal woont), tussen resident en omgeving en tussen uitvinder en techniek. Hij stelt scherp vanuit stilstand, en zoomt in op wat het kan betekenen om mens te zijn wanneer je met jezelf opgescheept zit. Met foto’s, video’s, tekeningen en sculpturen reflecteert hij op zijn relatie met technologie. Scrollend, filmend, dansend. Uiteindelijk komen we door kunst of andere voertuigen wel weer in beweging. De constellatie van de werken in de tentoonstelling nodigt de bezoeker uit tot een zoektocht, maar de vraag is of er daarmee afstand overbrugd of juist bevestigd wordt.
+        	    <br><br><br>
+        	    Kunstenaarsassistentie door Juliette Hengst, Enrico Carpi en Klaas Kloosterhuis.<br>
+        	    Speciale dank aan de Bierumer School.<br>
+        	    Mede mogelijk gemaakt door het Mondriaan Fonds en Stroom Den Haag.
+		</p>
+         	<p class="en">
+                    What would a strange artist do confronted with a strange environment? <span class="name">Pum van de Koppel</span> (1999, Amsterdam) resorts to hiding.
+		    <br><br>
+                    Doing art can be an engine to escape from rigid roles. Through performance <span class="name">Pum van de Koppel</span> ventured into different disciplines and he found freedom of movement by embracing the accidental. In his works he stumbled over unwritten rules and societal expectations, resulting in new angles.
+		    <br><br>
+                    The engine halted. During summer he got stranded in Bierum. In July and August he stayed in the Bierumer School as Artist in Residence. The resolution to make something out of nothing, like a proper artist, quickly led to a dead end. On the dike he looked into the void and couldn’t make head or tail of it. There is a saying that people from the city prefer to avoid themselves, but “is there a self without a social context?”.
+		    <br><br>
+                    In Perpetuum Immobile <span class="name">Pum van de Koppel</span> carefully keeps distance between Bierum and The Hague (where he normally lives), between resident and surrounding and between inventor and technology. He focuses from a standstill, and zooms in on what it can mean to be a human in face of yourself. With photo’s, video’s, drawings and sculptures he reflects on his relationship with technology. Scrolling, filming, dancing. After all, we’ll get going again, with the help of art or other vehicles. The constellation of works in the exhibition invites the visitor to a search, but the question is whether that bridges the gap or only confirms it.
+                    <br><br><br><br>
+                    Artist assistance by Juliette Hengst, Enrico Carpi and Klaas Kloosterhuis.<br>
+                    Special thanks to Bierumer School.<br>
+                    Made possible by Mondriaan Fonds and Stroom Den Haag.
+                </p>
+
+      </section>
+      <footer>
+        <div id="contact">
+          <p>
+            <span class="name"> Pum van de Koppel</span>
+            <span class="en">&#32;is</span
+            ><span class="nl">&#32;is aan het</span>
+            <a
+              class="external-link"
+              href="mailto:pumvandekoppel@gmail.com "
+              id="mail-button"
+              ><span class="en">&#32;corresponding&#32;</span
+              ><span class="nl">&#32;corresponderen&#32;</span></a
+            >
+            via e&#8209;mail.
+          </p>
+        </div>
+      </footer>
+    </aside>
+				<p id="context-button" class="hide-context-button-on-desktop" onclick="focusSwitch();changeEventListener()"><span>?</span></p>
+
+    <div class="hide-on-desktop" id="gradient"></div>
+
+    <main onclick="focusSwitch();changeEventListener()">
+      <figure>
+        <p id="hint">☟</p>
+        <video src="assets/verstoppen/zonder-titel_video.mp4" type="video/mp4" alt="" autoplay muted loop/></video>
+        <figcaption>
+          <p class="en">Untitled - buffering video, 48 seconds (loop)</p>
+          <p class="nl">Zonder titel - vastlopende video, 48 seconden (loop)</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/zonder-titel.jpg" alt="" />
+        <figcaption>
+          <p class="en">Untitled - buffering video, 48 seconds (loop)</p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl">Zonder titel - vastlopende video, 48 seconden (loop)</p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/hoodie.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>hoodie</em> - oilpastel drawing on paper, 225x150cm</p>
+          <small class="en">[metal construction: Klaas Kloosterhuis | photo: Hannah Schleifer]</small>
+          <p class="nl"><em>hoodie</em> - oliepastel op papier, 225x150cm</p>
+          <small class="nl">[metalen constructie: Klaas Kloosterhuis | foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/hoodie_achterkant.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>hoodie</em> - oilpastel drawing on paper, 225x150cm</p>
+          <small class="en">[metal construction: Klaas Kloosterhuis | photo: Hannah Schleifer]</small>
+          <p class="nl"><em>hoodie</em> - oliepastel op papier, 225x150cm</p>
+          <small class="nl">[metalen constructie: Klaas Kloosterhuis | foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/hoodie_detail.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>hoodie</em> - oilpastel drawing on paper, 225x150cm</p>
+          <small class="en">[metal construction: Klaas Kloosterhuis | photo: Hannah Schleifer]</small>
+          <p class="nl"><em>hoodie</em> - oliepastel op papier, 225x150cm</p>
+          <small class="nl">[metalen constructie: Klaas Kloosterhuis | foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/hoodie_constructie.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>hoodie</em> - oilpastel drawing on paper, 225x150cm</p>
+          <small class="en">[metal construction: Klaas Kloosterhuis | photo: Hannah Schleifer]</small>
+          <p class="nl"><em>hoodie</em> - oliepastel op papier, 225x150cm</p>
+          <small class="nl">[metalen constructie: Klaas Kloosterhuis | foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/overview-A.jpg" alt="" />
+        <figcaption>
+          <p class="en">overview</p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl">overzicht</p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/perpetuum-immobile.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Perpetuum Immobile</em> - webcam video with sound of clogs, 6:29 minutes</p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl"><em>Perpetuum Immobile</em> -webcam video met geluid van klompen, 6:29 minuten</p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <video src="assets/verstoppen/perpetuum-immobile_pvdk2026.mp4" type="video/mp4" loading="lazy" alt="" controls/></video>
+        <figcaption>
+          <p class="en"><em>Perpetuum Immobile</em> - webcam video with sound of clogs, 6:29 minutes</p>
+          <p class="nl"><em>Perpetuum Immobile</em> - webcam video met geluid van klompen, 6:29 minuten</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/missed-connections.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Missed connections</em> - two wooden planks, chalk, rope</p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl"><em>Mislukte ontmoetingen</em> - twee houten planken, krijt, touw</p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/missed-connections_detail.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Missed connections</em> - two wooden planks, chalk, rope</p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl"><em>Mislukte ontmoetingen</em> - twee houten planken, krijt, touw</p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/lepeltje_overview.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Small spoon</em> - clay from Bierum, impression of my body</p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl"><em>lepeltje</em> - klei uit Bierum, afdruk van mijn lichaam</p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/lepeltje.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Small spoon</em> - clay from Bierum, impression of my body</p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl"><em>lepeltje</em> - klei uit Bierum, afdruk van mijn lichaam</p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/lepeltje_detail.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Small spoon</em> - clay from Bierum, impression of my body</p>
+          <small class="en">[photo: Hannah Schleifer]</small>
+          <p class="nl"><em>lepeltje</em> - klei uit Bierum, afdruk van mijn lichaam</p>
+          <small class="nl">[foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/horizon.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Horizon</em> - drawing with oil pastel, pencil, marker and ballpoint pen, 150x600cm</p>
+          <small class="en">[metal construction: Klaas Kloosterhuis | photo: Hannah Schleifer]</small>
+          <p class="nl"><em>Horizon</em> - tekening met oliepastel, potlood, stift en pen, 150x600cm </p>
+          <small class="nl">[metalen-constructie: Klaas Kloosterhuis | foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/horizon_detail.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Horizon</em> - drawing with oil pastel, pencil, marker and ballpoint pen, 150x600cm</p>
+          <small class="en">[metal construction: Klaas Kloosterhuis | photo: Hannah Schleifer]</small>
+          <p class="nl"><em>Horizon</em> - tekening met oliepastel, potlood, stift en pen, 150x600cm </p>
+          <small class="nl">[metalen-constructie: Klaas Kloosterhuis | foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="assets/verstoppen/horizon_achterkant.jpg" alt="" />
+        <figcaption>
+          <p class="en"><em>Horizon</em> - drawing with oil pastel, pencil, marker and ballpoint pen, 150x600cm</p>
+          <small class="en">[metal construction: Klaas Kloosterhuis | photo: Hannah Schleifer]</small>
+          <p class="nl"><em>Horizon</em> - tekening met oliepastel, potlood, stift en pen, 150x600cm </p>
+          <small class="nl">[metalen-constructie: Klaas Kloosterhuis | foto: Hannah Schleifer]</small>
+        </figcaption>
+      </figure>
+      <figure>
+          <img src="assets/verstoppen/overview-B.jpg" alt="" />
+          <figcaption>
+              <p class="en"><em></em>overview </p>
+              <small class="en">[photo: Hannah Schleifer]</small>
+              <p class="nl"><em></em>overzicht</p>
+              <small class="nl">[foto: Hannah Schleifer]</small>
+          </figcaption>
+      </figure>
+      <figure>
+          <img src="assets/verstoppen/i'm-too-bored-to-tell-you.jpg" alt="" />
+          <figcaption>
+              <p class="en"><em>I'm too bored to tell you</em> - webcamvideo without sound, 59:55 minutes</p>
+              <small class="en">[photo: Hannah Schleifer]</small>
+              <p class="nl"><em>I'm too bored to tell you</em> - webcamvideo zonder geluid, 59:55 minuten</p>
+              <small class="nl">[foto: Hannah Schleifer]</small>
+          </figcaption>
+      </figure>
+      <figure>
+          <iframe id="toobored" width="640" height="530" src="https://www.youtube.com/embed/RmuTwx56b1E?si=7q5dQXA_qH6f-hZz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen load="lazy"></iframe>
+          <figcaption>
+              <p class="en"><em>I'm too bored to tell you</em> - webcam video without sound, 59:55 minutes</p>
+              <p class="nl"><em>I'm too bored to tell you</em> - webcam video zonder geluid, 59:55 minuten</p>
+          </figcaption>
+      </figure>
+      <figure>
+          <img src="assets/verstoppen/bierum-denhaag_overview.jpg" alt="" />
+          <figcaption>
+              <p class="en"><em>Bierum, The Hague</em> - series of photos of my facial hear, series of photos of my decaying plants</p>
+              <small class="en">[plant photos: Enrico Carpi | photo: Hannah Schleifer]</small>
+              <p class="nl"><em>Bierum, Den Haag</em> - </p>
+              <small class="nl">[foto: Hannah Schleifer]</small>
+          </figcaption>
+      </figure>
+      <figure>
+          <img src="assets/verstoppen/bierum-denhaag.jpg" alt="" />
+          <figcaption>
+              <p class="en"><em>Bierum, The Hague</em> - series of photos of my facial hear, series of photos of my decaying plants</p>
+              <small class="en">[plant photos: Enrico Carpi | photo: Hannah Schleifer]</small>
+              <p class="nl"><em>Bierum, Den Haag</em> - </p>
+              <small class="nl">[foto: Hannah Schleifer]</small>
+          </figcaption>
+      </figure>
+      <figure>
+          <img src="assets/verstoppen/bierum-denhaag_detail.jpg" alt="" />
+          <figcaption>
+              <p class="en"><em>Bierum, The Hague</em> - series of photos of my facial hear, series of photos of my decaying plants</p>
+              <small class="en">[plant photos: Enrico Carpi | photo: Hannah Schleifer]</small>
+              <p class="nl"><em>Bierum, Den Haag</em> - </p>
+              <small class="nl">[foto: Hannah Schleifer]</small>
+          </figcaption>
+      </figure>
+      <figure>
+          <img src="assets/verstoppen/artist-talk.jpg" alt="" / >
+          <figcaption>
+              <p class="en"><em>Artist Talk</em> - performance feat. Paula Biemans (30 minutes). 50m ethernet cable, 50m microphone cable, black blox, monitor</p>
+              <small class="en">[photo: Hannah Schleifer]</small>
+              <p class="nl"><em>Artist Talk</em> - performance feat. Paula Biemans (30 minuten). 50m ethernetkabel, 50m microfoonkabel, black box, monitor</p>
+              <small class="nl">[foto: Hannah Schleifer]</small>
+          </figcaption>
+      </figure>
+      <figure>
+          <img src="assets/verstoppen/artist-talk_detail.jpg" alt="" />
+          <figcaption>
+              <p class="en"><em>Artist Talk</em> - performance feat. Paula Biemans (30 minutes). 50m ethernet cable, 50m microphone cable, black blox, monitor</p>
+              <small class="en">[photo: Hannah Schleifer]</small>
+              <p class="nl"><em>Artist Talk</em> - performance feat. Paula Biemans (30 minuten). 50m ethernetkabel, 50m microfoonkabel, black box, monitor</p>
+              <small class="nl">[foto: Hannah Schleifer]</small>
+          </figcaption>
+      </figure>
+      <figure>
+          <img src="assets/verstoppen/artist-talk_kabels.jpg" alt="" />
+          <figcaption>
+              <p class="en"><em>Artist Talk</em> - performance feat. Paula Biemans (30 minutes). 50m ethernet cable, 50m microphone cable, black blox, monitor</p>
+              <small class="en">[photo: Hannah Schleifer]</small>
+              <p class="nl"><em>Artist Talk</em> - performance feat. Paula Biemans (30 minuten). 50m ethernetkabel, 50m microfoonkabel, black box, monitor</p>
+              <small class="nl">[foto: Hannah Schleifer]</small>
+          </figcaption>
+      </figure>
+          </main>
+
+    <script src="scheef.js"></script>
+    <script src="lang.js"></script>
+    <script src="focus.js"></script>
+    <script src="lazyload.js"></script>
+  </body>
+</html>

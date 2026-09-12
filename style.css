@@ -389,7 +389,7 @@ main p#hint {
     z-index: -1;
     font-size: 2em;
     margin-left: auto;
-    margin-right: -3vw;
+    margin-right: -7vw;
 }
 
 main p#hint ~ figcaption {
@@ -410,14 +410,13 @@ figure {
   height: calc(100dvh);
   flex-basis: calc(100dvh);
   width: min-content;
-  width: calc(100% - 6vw);
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-figure img {
-  max-height: 82dvh;
-  width: 100%;
+figure img, figure video {
+  max-height: 85dvh;
+  /*width: 100%;*/
   object-fit: contain;
   margin-left: auto;
   margin-right: auto;
@@ -426,12 +425,24 @@ figure img {
   margin-bottom: auto;
   padding-top: 2dvh;
   min-width: auto;
-
+  max-width: 50vw;
   transition: max-width 1.56s ease-out;
+  cursor: zoom-in;
+  cursor: -moz-zoom-in; 
+  cursor: -webkit-zoom-in;
+}
+
+
+main.focused figure img, main.focused figure video {
+    cursor: zoom-out;
+    cursor: -moz-zoom-out;
+    cursor: -webkit-zoom-out;
+    transition: max-width 5s;
+    max-width: 100vw;
 }
 
 figure div#slideshow-of-mathematical-objects,
-figure div#isolatie-variatie, figure div#wine-video, figure iframe#adolescence {
+figure div#isolatie-variatie, figure div#wine-video, figure iframe#adolescence, figure iframe#toobored {
   width: 47vw;
   margin-left: auto;
   margin-right: auto;
@@ -446,7 +457,15 @@ figure iframe#adolescence {
 }
 
 figure div#wine-video {
-  width: 28.5vw;
+    cursor: zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: -webkit-zoom-in;
+    width: 28.5vw;
+}
+
+figure div#wine-video + figcaption p {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figure figcaption {
@@ -459,8 +478,9 @@ figure figcaption {
   width: 100%;
   margin-left: 3vw;
   margin-right: 3vw;
-  padding-bottom: 3.7dvh;
+  padding-bottom: 2.9dvh;
   margin-bottom: 0 !important;
+  cursor: zoom-in;
   width: 100%;
   /* display: flex; */
   justify-content: space-between;
@@ -476,7 +496,7 @@ figure figcaption > small {
   z-index: 1;
   margin-top: auto;
   margin-bottom: auto;
-  padding-top: 3.8dvh;
+  /*padding-top: 3.8dvh;*/
 }
 
 figcaption small {
@@ -600,7 +620,7 @@ header a span#name {
 /*************************************** about */
 
 /* section#artist-statement-and-cv {
-  display: flex;
+  disp, figure iframe#tooboredlay: flex;
   flex-direction: column;
   justify-content: space-between;
 } */
@@ -670,7 +690,7 @@ div #dot-dot-dot hr {
     flex-direction: column;
     min-height: 100dvh;
     margin-right: 3vw !important;
-    transition: left 0.88s ease-in-out;
+    transition: left .88s ease-in-out;
   }
 
   header {
@@ -748,25 +768,27 @@ div #dot-dot-dot hr {
   }
  
   main p#hint {
+    width: 94vw;
     position: sticky;
     top: 3.5dvh;
     margin: 0;
     z-index: -1;
     font-size: 2em;
-    margin-left: auto;
-    margin-right: -8px;
+    margin-left: 88vw;
+    margin-right: unset;
   }
 
   figure {
     width: auto;
   }
 
-  figure img {
+  figure img, figure video {
     max-width: 94vw;
+    cursor: zoom-in;
   }
 
   figure div#slideshow-of-mathematical-objects,
-  figure div#isolatie-variatie, figure div#wine-video, figure iframe#adolescence {
+  figure div#isolatie-variatie, figure div#wine-video, figure iframe#adolescence, figure iframe#toobored {
     width: 94vw;
   }
 
@@ -775,7 +797,7 @@ div #dot-dot-dot hr {
   height: 52.875vw;
 }
 
-  figcaption {
+  figcaption, figure iframe#toobored {
 	display: initial;
     margin-left: auto;
     margin-right: auto;
