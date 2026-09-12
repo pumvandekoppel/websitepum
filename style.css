@@ -775,7 +775,7 @@ div #dot-dot-dot hr {
     margin: 0;
     z-index: -1;
     font-size: 2em;
-    margin-left: 88vw;
+    margin-left: 0;
     margin-right: unset;
   }
 
