@@ -389,7 +389,7 @@ main p#hint {
     z-index: -1;
     font-size: 2em;
     margin-left: auto;
-    margin-right: -7vw;
+    margin-right: 0;
 }
 
 main p#hint ~ figcaption {
