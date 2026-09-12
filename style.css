@@ -505,6 +505,8 @@ figcaption small {
   margin-bottom: 0 !important;
   margin-left: 12px !important;
   align-self: flex-end;
+  max-width: 94vw;
+  text-wrap: balance;
 }
 
 p#context-button {
