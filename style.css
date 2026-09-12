@@ -248,7 +248,8 @@ section {
 }
 
 section h3 {
-	    margin-top: max(1.6dvh, 25px);
+	    /*margin-top: max(1.6dvh, 25px);*/
+	    margin-top: 0;
 
   font-size: min(1.25em, 1.75vw);
 }
