@@ -205,7 +205,7 @@ header h2 {
   max-height: 10dvh;
   width: auto;
   font-size: min(2em, 2vw);
-  font-weight: 900;
+  font-weight: 800;
 }
 
 header h2 span.name {
