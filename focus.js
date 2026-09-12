@@ -21,12 +21,12 @@ window.onload = function() {
 function focusSwitch() {
   if (desktopMediaQuery.matches) {
     if (focused == false) {
-      setTimeout('aside.style.marginLeft = "-57vw";', 40);
+      setTimeout('aside.style.marginLeft = "-57vw";', 00);
       //aside.style.marginLeft = "-57vw";
       main.classList.add("focused");
       focused = true;
     } else if (focused == true) {
-      setTimeout('aside.style.marginLeft = "0";', 200);
+      setTimeout('aside.style.marginLeft = "0";', 650);
       main.classList.remove("focused");
       focused = false;
     }

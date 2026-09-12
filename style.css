@@ -175,7 +175,7 @@ aside {
   min-height: 100dvh;
   margin-bottom: 0 !important;
 
-  transition: margin-left 0.68s ease-in
+  transition: margin-left 0.65s ease-out;
 }
 
 /****************************** header */
@@ -438,7 +438,7 @@ main.focused figure img, main.focused figure video {
     cursor: -moz-zoom-out;
     cursor: -webkit-zoom-out;
     transition: max-width 5s;
-    max-width: 100vw;
+    max-width: 94vw;
 }
 
 figure div#slideshow-of-mathematical-objects,
