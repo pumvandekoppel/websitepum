@@ -248,7 +248,8 @@ section {
 }
 
 section h3 {
-	    margin-top: max(1.6dvh, 25px);
+	    /*margin-top: max(1.6dvh, 25px);*/
+	    margin-top: 0;
 
   font-size: min(1.25em, 1.75vw);
 }
@@ -774,7 +775,7 @@ div #dot-dot-dot hr {
     margin: 0;
     z-index: -1;
     font-size: 2em;
-    margin-left: 88vw;
+    margin-left: 0;
     margin-right: unset;
   }
 
