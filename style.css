@@ -387,6 +387,7 @@ main {
 }
 
 main p#hint {
+    display: none;
     position: sticky;
     top: 3.5dvh;
     margin: 0;
@@ -775,6 +776,7 @@ div #dot-dot-dot hr {
   }
  
   main p#hint {
+      display: none;
     width: 94vw;
     position: sticky;
     top: 3.5dvh;
