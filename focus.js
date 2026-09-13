@@ -21,7 +21,7 @@ window.onload = function() {
 function focusSwitch() {
   if (desktopMediaQuery.matches) {
     if (focused == false) {
-      setTimeout('aside.style.marginLeft = "-57vw";', 00);
+      setTimeout('aside.style.marginLeft = "-51vw";', 00);
       //aside.style.marginLeft = "-57vw";
       main.classList.add("focused");
       focused = true;

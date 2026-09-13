@@ -18,7 +18,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
-  gap: 3vw;
+  gap: 0vw;
   width: 94vw;
   height: 100dvh;
   margin: 0;
@@ -152,7 +152,7 @@ body#index {
 /******************************** aside */
 
 aside {
-  width: calc(94vw + 1px);
+  width: calc(47vw);
   flex: 1 1 auto;
   height: 100%;
   top: 0px;
@@ -166,7 +166,6 @@ aside {
   z-index: 5;
   max-width: 74ch;
   min-width: 20ch;
-
   transform-origin: left;
   display: flex;
   flex-direction: column;
@@ -271,7 +270,11 @@ div#push {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  max-width: 94vw;
+  width: 94vw;
+  height: auto;
+  min-height: auto;
+  padding: 0;
+  background-color: #fefefe;
 }
 
 footer {
@@ -298,7 +301,7 @@ footer div > * {
 }
 
 body#index footer div > * {
-    padding-bottom: 1.3dvh;
+    padding-bottom: 0dvh;
 }
 
 a {
@@ -390,7 +393,7 @@ main p#hint {
     z-index: -1;
     font-size: 2em;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: -31px;
 }
 
 main p#hint ~ figcaption {
