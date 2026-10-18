@@ -271,6 +271,7 @@ div#push {
   justify-content: space-between;
   align-items: flex-end;
   width: 94vw;
+  max-width: unset;
   height: auto;
   min-height: auto;
   padding: 0;
