@@ -56,6 +56,8 @@ main.addEventListener("touchend", touchEnd);
 let touchStartTime, clientX, clientY;
 
 function touchStart(e) {
+  // Prevent the default behavior (e.g. scrolling) of the touch event
+  //   e.preventDefault();
   // Record the timestamp of the touch event
   touchStartTime = Date.now();
 
