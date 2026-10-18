@@ -716,6 +716,7 @@ div #dot-dot-dot hr {
   }
 
   header h2 {
+    max-height: unset;
     font-size: 24px;
     margin-top: 3.2dvh;
   }
